@@ -4,20 +4,20 @@ function Difficulty({ difficulty, setDifficulty }) {
     const [levels, setLevels] = useState([
         {
             id: 0,
-            title: "Easy"
+            title: "Легкий"
         },
         {
             id: 1,
-            title: "Medium"
+            title: "Средний"
         },
         {
             id: 2,
-            title: "Hard"
+            title: "Сложный"
         }
     ]);
     return (
         <div className="difficulty-container">
-            <h4>Difficulty of the bot</h4>
+            <h4>Выберете сложность</h4>
             <div className="difficulty-wrap">
             {
                 levels.map(level => {

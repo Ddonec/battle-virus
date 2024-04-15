@@ -43,7 +43,7 @@ function TableShip() {
 
    return (
       <div className="table-centered your-board">
-         <h2 className="table-head-text">Your board</h2>
+         <h2 className="table-head-text">Ваше поле</h2>
          <table className="table-ship">
             <tbody>{rows}</tbody>
          </table>

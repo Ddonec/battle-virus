@@ -3,8 +3,7 @@
    top: 0;
    left: 0;
    z-index: 1;
-   background: rgba(180, 180, 255, 0.2);
-   border: 3px solid #b4b4ff;
+   border: 3px solid #4e54ec;
    cursor: pointer;
 }
 .ship-destroyed {
@@ -276,4 +275,18 @@
 }
 .cell-bounds > .cell-circle {
    background: rgba(77, 148, 82, 0.2);
+}
+
+@media (pointer: coarse) {
+   .shipList-container {
+      display: none;
+   }
+   /* .page-container {
+      position: relative;
+      transform: unset;
+      top: unset;
+      left: unset;
+      width: 100vw;
+      height: 100dvh;
+   } */
 }

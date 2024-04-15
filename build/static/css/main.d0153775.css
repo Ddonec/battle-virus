@@ -136,9 +136,9 @@ body {
    text-decoration: underline dotted;
    text-underline-offset: 5px;
 }
-.modify-text:hover {
+/* .modify-text:hover {
    color: #a40013;
-}
+} */
 .game-end-container {
    -webkit-animation-duration: 1s;
    animation-duration: 1s;

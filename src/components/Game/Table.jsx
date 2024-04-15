@@ -113,7 +113,7 @@ function Table({ type, board, classNames }) {
    classList.push(type === 1 ? "opponent-board" : "your-board");
    return (
       <div className={classList.join(" ")}>
-         <h2 className="table-head-text">{(type ? "Opponent" : "Your") + " board"}</h2>
+         <h2 className="table-head-text">{(type ? "Вражеское" : "Ваше") + " поле"}</h2>
          <table className={tableNames.join(" ")}>
             <tbody>{rows}</tbody>
          </table>
