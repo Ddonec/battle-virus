@@ -54,34 +54,3 @@
    top: -25px;
    text-align: center;
 }
-
-.your-board .virus-1 {
-   background-image: url(../img/1x1-good.png);
-}
-.your-board .virus-2 {
-   background-image: url(../img/1x1-good.png);
-}
-.your-board .virus-3 {
-   background-image: url(../img/1x1-good.png);
-}
-.your-board .virus-4 {
-   background-image: url(../img/1x1-good.png);
-}
-.your-board .virus-5 {
-   background-image: url(../img/pngegg.png);
-}
-.your-board .virus-6 {
-   background-image: url(../img/pngegg.png);
-}
-.your-board .virus-7 {
-   background-image: url(../img/pngegg.png);
-}
-.your-board .virus-8 {
-   background-image: url(../img/pngegg.png);
-}
-.your-board .virus-9 {
-   background-image: url(../img/pngegg.png);
-}
-.your-board .virus-10 {
-   background-image: url(../img/pngegg3.png);
-}
