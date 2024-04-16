@@ -290,3 +290,24 @@
       height: 100dvh;
    } */
 }
+
+/* Стили для альбомной ориентации экрана (горизонтальная) */
+@media screen and (orientation: landscape) {
+}
+
+/* Стили для портретной ориентации экрана (вертикальная) */
+@media screen and (orientation: portrait) {
+   .page-holder {
+      flex-direction: column;
+   }
+   .page-container {
+      width: 720px;
+      height: 1280px;
+   }
+   .table-centered {
+      margin: 40px;
+   }
+   .ship-select {
+      margin: 0;
+   }
+}
