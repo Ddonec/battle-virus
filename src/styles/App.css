@@ -161,8 +161,10 @@ body {
 .game-end-container {
    position: absolute;
    background: rgba(0, 0, 0, 0.2);
-   min-width: 400px;
-   min-height: 200px;
+   /* min-width: 400px;
+   min-height: 200px; */
+   width: 1152px;
+   height: 648px;
    font-size: 40px;
    padding: 10px 30px;
    border-radius: 10px;
