@@ -5,7 +5,11 @@ export function random(min, max) {
 }
 
 export function getScale([width, height]) {
-   return Math.min(width / 1280, height / 720);
+   if (width < height) {
+      return Math.min(width / 720, height / 1280);
+   } else {
+      return Math.min(width / 720, height / 720);
+   }
 }
 
 export function getChar(code) {
@@ -71,7 +75,7 @@ export function getSetupShips() {
          { id: 2, x: -1, y: -1, w: 2, h: 0, health: 3, bg: "9" },
       ],
       [{ id: 0, x: -1, y: -1, w: 3, h: 0, health: 4, bg: "10" }],
-    //   [{ id: 0, x: -1, y: -1, w: 3, h: 0, health: 5, bg: "11" }],
+      //   [{ id: 0, x: -1, y: -1, w: 3, h: 0, health: 5, bg: "11" }],
    ];
 }
 
