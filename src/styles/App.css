@@ -91,16 +91,17 @@ body {
 
 .ship-select {
    border: 1px solid #b4b4ff;
-   width: 350px;
-   margin-left: -150px;
+   width: 300px;
+   /* margin-left: -150px; */
    background: white;
 }
 .ship-wrapper {
-   padding: 0px 30px 30px;
+   padding: 0px 20px 30px;
 }
 .ship-holder {
    display: flex;
    min-height: 60px;
+   flex-wrap: wrap;
 }
 .ship-holder .ship {
    position: static;
@@ -173,6 +174,10 @@ body {
    align-items: center;
    margin: 20px 0;
    padding: 40px 10px;
+   gap: 40px;
+}
+.white-cont {
+   display: flex;
    gap: 40px;
 }
 .hero-img {
@@ -274,7 +279,7 @@ body {
    padding: 10px 30px;
 }
 .game-end-header {
-   color: #fff;
+   color: #2c42b6;
    width: 670px;
    text-align: left;
    margin: 20px auto;
@@ -282,6 +287,9 @@ body {
    padding: 20px;
    background-size: cover;
    height: 304px;
+}
+.winner-subtitle {
+   color: #000;
 }
 .game-end-container > h5 {
    color: white;
@@ -337,12 +345,16 @@ body {
 .logo-container {
    position: absolute;
    top: 20px;
-   left: 20px;
+   left: 50%;
+   transform: translateX(-50%);
+   background-image: url(../img/logo-pm.png);
+   background-size: cover;
+   width: 130px;
+   height: 40px;
 }
 
 .logo-text {
    margin: 0;
-   margin-left: 10px;
    font-family: Tahoma, sans-serif;
    color: black;
    display: inline-block;

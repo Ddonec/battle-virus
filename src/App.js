@@ -34,7 +34,7 @@ function App() {
          <div className="page-container no-select" style={{ transform: "translate(-50%, -50%) scale(" + scale + ")" }}>
             <div className="page-wrapper">
                <div className="logo-container">
-                  <h1 className="logo-text ">ПРОМОМЕD</h1>
+                  {/* <h1 className="logo-text ">ПРОМОМЕD</h1> */}
                </div>
                {board1.length === 10 ? (
                   <GameBoard {...{ board1, board2, setBoard1, setBoard2, difficulty }}></GameBoard>

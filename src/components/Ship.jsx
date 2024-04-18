@@ -8,7 +8,7 @@ function Ship({ shipPosition, classNames, ...args }) {
 
    return (
       <div className={classList.join(" ")} {...args}>
-         {bg}
+         {/* {bg} */}
       </div>
    );
 }

@@ -25,21 +25,25 @@ function GameEnd({ setBoard1, setBoard2 }) {
       <>
          {winner !== null && (
             <div onClick={resetGame} className="game-end-container">
-               <h3 className="game-end-header">
-                  {winner === 0 ? (
-                     <>
-                        Проигран бой, но не война
-                        <p>{getRandomFromArray(stringArr)}</p>
-                     </>
-                  ) : (
-                     <>
-                        Поздравляю с победой!
-                        <p>{getRandomFromArray(stringArrWin)}</p>
-                     </>
-                  )}
-               </h3>
-
-               <h5 className="shadowed-tiny">Играть снова</h5>
+               <div className="white-cont">
+                  <div className="hero-img"></div>
+                  <div>
+                     <h3 className="game-end-header">
+                        {winner === 0 ? (
+                           <>
+                              Проигран бой, но не война
+                              <p className="winner-subtitle">{getRandomFromArray(stringArr)}</p>
+                           </>
+                        ) : (
+                           <>
+                              Поздравляю с победой!
+                              <p className="winner-subtitle">{getRandomFromArray(stringArrWin)}</p>
+                           </>
+                        )}
+                     </h3>
+                  </div>
+               </div>
+                     <h5 className="shadowed-tiny">Играть снова</h5>
             </div>
          )}
       </>
