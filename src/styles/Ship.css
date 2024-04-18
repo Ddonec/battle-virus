@@ -3,8 +3,12 @@
    top: 0;
    left: 0;
    z-index: 1;
-   border: 3px solid #4e54ec;
+   border-right: 1px solid #b4b4ff;
+   border-bottom: 1px solid #b4b4ff;
    cursor: pointer;
+}
+.ship-wrapper .ship {
+   border: none;
 }
 .ship-destroyed {
    background: rgba(255, 122, 122, 0.1);
@@ -83,39 +87,39 @@
    background-repeat: no-repeat;
 }
 .your-board .virus-1 {
-   background-image: url(../img/1x1-good.png);
+   background-image: url(../img/1x1-good-v2.png);
 }
 .your-board .virus-2 {
    background-image: url(../img/1x1-good-v2.png);
 }
 .your-board .virus-3 {
-   background-image: url(../img/1x1-good-v3.png);
+   background-image: url(../img/1x1-good-v2.png);
 }
 .your-board .virus-4 {
-   background-image: url(../img/1x1-good.png);
+   background-image: url(../img/1x1-good-v2.png);
 }
 .your-board .virus-5 {
-   background-image: url(../img/2x1-good.png);
+   background-image: url(../img/2x1-good-v2.png);
 }
 .your-board .virus-6 {
    background-image: url(../img/2x1-good-v2.png);
 }
 .your-board .virus-7 {
-   background-image: url(../img/2x1-good.png);
+   background-image: url(../img/2x1-good-v2.png);
 }
 .your-board .virus-8 {
-   background-image: url(../img/3x1-god.png);
+   background-image: url(../img/3x1-good-v2.png);
 }
 .your-board .virus-9 {
    background-image: url(../img/3x1-good-v2.png);
 }
 .your-board .virus-10 {
-   background-image: url(../img/4x1-good.png);
+   background-image: url(../img/4x1-good-v2.png);
 }
 
 .your-board .virus-1.hor,
 .ship-wrapper .virus-1 {
-   background-image: url(../img/1x1-good.png);
+   background-image: url(../img/1x1-good-v2.png);
 }
 .your-board .virus-2.hor,
 .ship-wrapper .virus-2 {
@@ -123,15 +127,15 @@
 }
 .your-board .virus-3.hor,
 .ship-wrapper .virus-3 {
-   background-image: url(../img/1x1-good-v3.png);
+   background-image: url(../img/1x1-good-v2.png);
 }
 .your-board .virus-4.hor,
 .ship-wrapper .virus-4 {
-   background-image: url(../img/1x1-good.png);
+   background-image: url(../img/1x1-good-v2.png);
 }
 .your-board .virus-5.hor,
 .ship-wrapper .virus-5 {
-   background-image: url(../img/rotate/2x1-good-rot.jpeg);
+   background-image: url(../img/rotate/2x1-good-rot-v2.png);
 }
 .your-board .virus-6.hor,
 .ship-wrapper .virus-6 {
@@ -139,11 +143,11 @@
 }
 .your-board .virus-7.hor,
 .ship-wrapper .virus-7 {
-   background-image: url(../img/rotate/2x1-good-rot.jpeg);
+   background-image: url(../img/rotate/2x1-good-rot-v2.png);
 }
 .your-board .virus-8.hor,
 .ship-wrapper .virus-8 {
-   background-image: url(../img/rotate/3x1-good-rot.jpeg);
+   background-image: url(../img/rotate/3x1-good-rot-v2.png);
 }
 .your-board .virus-9.hor,
 .ship-wrapper .virus-9 {
@@ -151,7 +155,7 @@
 }
 .your-board .virus-10.hor,
 .ship-wrapper .virus-10 {
-   background-image: url(../img/rotate/4x1-good-rot.jpeg);
+   background-image: url(../img/rotate/4x1-good-rot-v2.png);
 }
 
 .opponent-board .virus-1 {
@@ -159,15 +163,15 @@
    z-index: 2;
 }
 .opponent-board .virus-2 {
-   background-image: url(../img/1x1-bad-v3.png);
+   background-image: url(../img/1x1-bad-v2.png);
    z-index: 2;
 }
 .opponent-board .virus-3 {
-   background-image: url(../img/1x1-bad-v4.png);
+   background-image: url(../img/1x1-bad-v2.png);
    z-index: 2;
 }
 .opponent-board .virus-4 {
-   background-image: url(../img/1x1-bad-v5.png);
+   background-image: url(../img/1x1-bad-v2.png);
    z-index: 2;
 }
 .opponent-board .virus-5 {
@@ -200,7 +204,7 @@
 }
 .opponent-board .virus-6.hor {
    z-index: 2;
-   background-image: url(../img/rotate/1x2-bad-rot.jpeg);
+   background-image: url(../img/rotate/1x2-bad-rot-v2.png);
 }
 .opponent-board .virus-7.hor {
    z-index: 2;
@@ -212,7 +216,7 @@
 }
 .opponent-board .virus-9.hor {
    z-index: 2;
-   background-image: url(../img/rotate/1x3-bad-rot-v3.png);
+   background-image: url(../img/rotate/1x3-bad-rot-v2.png);
 }
 .opponent-board .virus-10.hor {
    z-index: 2;
@@ -265,16 +269,22 @@
 }
 
 .cell-circle {
-   width: 5px;
-   height: 5px;
+   width: 15px;
+   height: 15px;
    border-radius: 50%;
 }
 
+.your-board .cell-missed > .cell-circle {
+   background: #2b449e;
+}
+.your-board .cell-bounds > .cell-circle {
+   background: #2b449e;
+}
 .cell-missed > .cell-circle {
    background: rgba(13, 92, 0, 0.8);
 }
 .cell-bounds > .cell-circle {
-   background: rgba(77, 148, 82, 0.2);
+   background: rgba(13, 92, 0, 0.8);
 }
 
 @media (pointer: coarse) {

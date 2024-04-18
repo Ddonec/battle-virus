@@ -15,7 +15,10 @@ export function getScale([width, height]) {
 export function getChar(code) {
    return String.fromCharCode(97 + code).toUpperCase();
 }
-
+export function getRandomFromArray(array) {
+   const randomIndex = Math.floor(Math.random() * array.length);
+   return array[randomIndex];
+}
 export function map(value, start1, stop1, start2, stop2) {
    return ((value - start1) / (stop1 - start1)) * (stop2 - start2) + start2;
 }

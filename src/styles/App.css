@@ -91,16 +91,17 @@ body {
 
 .ship-select {
    border: 1px solid #b4b4ff;
-   width: 350px;
-   margin-left: -150px;
+   width: 300px;
+   /* margin-left: -150px; */
    background: white;
 }
 .ship-wrapper {
-   padding: 0px 30px 30px;
+   padding: 0px 20px 30px;
 }
 .ship-holder {
    display: flex;
    min-height: 60px;
+   flex-wrap: wrap;
 }
 .ship-holder .ship {
    position: static;
@@ -158,11 +159,59 @@ body {
    color: #a40013;
 } */
 
+.logo {
+   width: 202px;
+   height: 63px;
+   background-image: url(../img/logo-pm.png);
+   background-size: cover;
+   background-position: center;
+}
+.blue-container {
+   background: #2c42b6;
+   border-radius: 40px;
+   width: calc(100% - 100px);
+   display: flex;
+   align-items: center;
+   margin: 20px 0;
+   padding: 40px 10px;
+   gap: 40px;
+}
+.white-cont {
+   display: flex;
+   gap: 40px;
+}
+.hero-img {
+   width: 251px;
+   height: 289px;
+   background-image: url(../img/hero.png);
+   background-size: cover;
+}
+.welcome-title {
+   color: #fff;
+}
+.welcome-subtitle {
+   color: #fff;
+}
+.rules-title {
+   color: #fff;
+   font-size: 0.6em;
+}
+.rules-subtitle {
+   color: #fff;
+   font-size: 0.5em;
+}
+.btnS-area {
+   display: flex;
+   gap: 20px;
+}
+
 .game-end-container {
    position: absolute;
-   background: rgba(0, 0, 0, 0.2);
-   min-width: 400px;
-   min-height: 200px;
+   background: #fff;
+   /* min-width: 400px;
+   min-height: 200px; */
+   width: 1152px;
+   height: 648px;
    font-size: 40px;
    padding: 10px 30px;
    border-radius: 10px;
@@ -171,6 +220,33 @@ body {
    z-index: 100;
    animation-duration: 1000ms;
    animation-name: appearTransition;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.game-start-container {
+   position: absolute;
+   background: #fff;
+   /* min-width: 400px;
+   min-height: 200px; */
+   width: 1152px;
+   height: 648px;
+   font-size: 40px;
+   padding: 10px 30px;
+   border-radius: 10px;
+   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+   cursor: pointer;
+   z-index: 100;
+   animation-duration: 1000ms;
+   animation-name: appearTransition;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
 @keyframes appearTransition {
    from {
@@ -180,14 +256,54 @@ body {
       opacity: 1;
    }
 }
-.game-end-header {
+.ram-border {
+   width: 523px;
+   height: 311px;
+   padding: 20px;
+   background-image: url(../img/bg-dialog-w.png);
+   background-position: center;
+   background-size: cover;
+   margin-left: 30px;
+}
+.close-btn {
+   border-radius: 10px;
+   background: #e02b2d;
    color: white;
-   font-weight: 700;
+   padding: 10px 30px;
+}
+.rule-btn {
+   border-radius: 10px;
+   background: #fff;
+   border: 3px solid #1977d0;
+   color: #1977d0;
+   padding: 10px 30px;
+}
+.game-end-header {
+   color: #2c42b6;
+   width: 670px;
+   text-align: left;
+   margin: 20px auto;
+   background-image: url(../img/bg-dialog.png);
+   padding: 20px;
+   background-size: cover;
+   height: 304px;
+}
+.winner-subtitle {
+   color: #000;
 }
 .game-end-container > h5 {
    color: white;
+   width: fit-content;
+   padding: 10px 30px;
+   background: #e02b2d;
+   border-radius: 10px;
+   font-size: 29px;
 }
-
+.game-end-header > p {
+   font-size: 0.6em;
+   font-weight: 400;
+   text-align: left;
+}
 .shipList-container {
    position: absolute;
 }
@@ -229,12 +345,16 @@ body {
 .logo-container {
    position: absolute;
    top: 20px;
-   left: 20px;
+   left: 50%;
+   transform: translateX(-50%);
+   background-image: url(../img/logo-pm.png);
+   background-size: cover;
+   width: 130px;
+   height: 40px;
 }
 
 .logo-text {
    margin: 0;
-   margin-left: 10px;
    font-family: Tahoma, sans-serif;
    color: black;
    display: inline-block;
