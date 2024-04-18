@@ -158,6 +158,48 @@ body {
    color: #a40013;
 } */
 
+.logo {
+   width: 202px;
+   height: 63px;
+   background-image: url(../img/logo-pm.png);
+   background-size: cover;
+   background-position: center;
+}
+.blue-container {
+   background: #2c42b6;
+   border-radius: 40px;
+   width: calc(100% - 100px);
+   display: flex;
+   align-items: center;
+   margin: 20px 0;
+   padding: 40px 10px;
+   gap: 40px;
+}
+.hero-img {
+   width: 251px;
+   height: 289px;
+   background-image: url(../img/hero.png);
+   background-size: cover;
+}
+.welcome-title {
+   color: #fff;
+}
+.welcome-subtitle {
+   color: #fff;
+}
+.rules-title {
+   color: #fff;
+   font-size: 0.6em;
+}
+.rules-subtitle {
+   color: #fff;
+   font-size: 0.5em;
+}
+.btnS-area {
+   display: flex;
+   gap: 20px;
+}
+
 .game-end-container {
    position: absolute;
    background: #fff;
@@ -209,14 +251,30 @@ body {
       opacity: 1;
    }
 }
+.ram-border {
+   width: 523px;
+   height: 311px;
+   padding: 20px;
+   background-image: url(../img/bg-dialog-w.png);
+   background-position: center;
+   background-size: cover;
+   margin-left: 30px;
+}
 .close-btn {
    border-radius: 10px;
    background: #e02b2d;
    color: white;
    padding: 10px 30px;
 }
+.rule-btn {
+   border-radius: 10px;
+   background: #fff;
+   border: 3px solid #1977d0;
+   color: #1977d0;
+   padding: 10px 30px;
+}
 .game-end-header {
-   color: #2c42b6;
+   color: #fff;
    width: 670px;
    text-align: left;
    margin: 20px auto;
