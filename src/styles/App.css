@@ -160,7 +160,7 @@ body {
 
 .game-end-container {
    position: absolute;
-   background: rgba(0, 0, 0, 0.2);
+   background: #fff;
    /* min-width: 400px;
    min-height: 200px; */
    width: 1152px;
@@ -173,6 +173,33 @@ body {
    z-index: 100;
    animation-duration: 1000ms;
    animation-name: appearTransition;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.game-start-container {
+   position: absolute;
+   background: #fff;
+   /* min-width: 400px;
+   min-height: 200px; */
+   width: 1152px;
+   height: 648px;
+   font-size: 40px;
+   padding: 10px 30px;
+   border-radius: 10px;
+   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+   cursor: pointer;
+   z-index: 100;
+   animation-duration: 1000ms;
+   animation-name: appearTransition;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
 @keyframes appearTransition {
    from {
@@ -182,14 +209,35 @@ body {
       opacity: 1;
    }
 }
-.game-end-header {
+.close-btn {
+   border-radius: 10px;
+   background: #e02b2d;
    color: white;
-   font-weight: 700;
+   padding: 10px 30px;
+}
+.game-end-header {
+   color: #2c42b6;
+   width: 670px;
+   text-align: left;
+   margin: 20px auto;
+   background-image: url(../img/bg-dialog.png);
+   padding: 20px;
+   background-size: cover;
+   height: 304px;
 }
 .game-end-container > h5 {
    color: white;
+   width: fit-content;
+   padding: 10px 30px;
+   background: #e02b2d;
+   border-radius: 10px;
+   font-size: 29px;
 }
-
+.game-end-header > p {
+   font-size: 0.6em;
+   font-weight: 400;
+   text-align: left;
+}
 .shipList-container {
    position: absolute;
 }
