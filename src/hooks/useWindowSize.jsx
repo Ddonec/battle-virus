@@ -9,7 +9,7 @@ function useWindowSize() {
       window.addEventListener("resize", updateSize);
       return () => window.removeEventListener("resize", updateSize);
    }, []);
-   console.log(size);
+//    console.log(size);
    return size;
 }
 export default useWindowSize;

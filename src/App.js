@@ -7,6 +7,7 @@ import { generateBoard, getScale } from "./utils/Common";
 import SetupBoard from "./components/SetupBoard";
 import GameBoard from "./components/GameBoard";
 import { CSSTransition } from "react-transition-group";
+import WelcomeHi from "./components/Game/WelcomeHello";
 
 function App() {
    const size = useWindowSize();
@@ -15,6 +16,8 @@ function App() {
    const [difficulty, setDifficulty] = useState(0);
    const [board1, setBoard1] = useState([]);
    const [board2, setBoard2] = useState(generateBoard());
+
+   WelcomeHi();
 
    return (
       <div className="page-container no-select" style={{ transform: "translate(-50%, -50%) scale(" + scale + ")" }}>
