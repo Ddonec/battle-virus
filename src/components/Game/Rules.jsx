@@ -4,12 +4,7 @@ import { generateBoard } from "../../utils/Common";
 import { getRandomFromArray } from "../../utils/Common";
 
 function Rules({ clickCB }) {
-   //    const { winner } = useContext(GameContext);
 
-   //    function resetGame() {
-   //       setBoard1([]);
-   //       setBoard2(generateBoard());
-   //    }
 
    return (
       <>
