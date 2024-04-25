@@ -4,14 +4,14 @@ import { generateBoard } from "../../utils/Common";
 import { getRandomFromArray } from "../../utils/Common";
 
 function WelcomeHi({ clickCB, clickR }) {
-
    return (
       <>
          <div className="game-start-container">
             <div className="logo"></div>
             <div className="blue-container">
                <div className="hero-img"></div>
-               <div>
+               <div className="justify-left">
+                  <div className="border-w-div">игра</div>
                   <h3 className="welcome-title ">Морской бой</h3>
                   <p className="welcome-subtitle">Ученые против микробов</p>
                </div>

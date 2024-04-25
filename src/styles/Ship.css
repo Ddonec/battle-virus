@@ -160,66 +160,50 @@
 
 .opponent-board .virus-1 {
    background-image: url(../img/1x1-bad-v2.png);
-   z-index: 2;
 }
 .opponent-board .virus-2 {
    background-image: url(../img/1x1-bad-v2.png);
-   z-index: 2;
 }
 .opponent-board .virus-3 {
    background-image: url(../img/1x1-bad-v2.png);
-   z-index: 2;
 }
 .opponent-board .virus-4 {
    background-image: url(../img/1x1-bad-v2.png);
-   z-index: 2;
 }
 .opponent-board .virus-5 {
    background-image: url(../img/1x2-bad-v2.png);
-   z-index: 2;
 }
 .opponent-board .virus-6 {
    background-image: url(../img/1x2-bad-v2.png);
-   z-index: 2;
 }
 .opponent-board .virus-7 {
    background-image: url(../img/1x2-bad-v2.png);
-   z-index: 2;
 }
 .opponent-board .virus-8 {
    background-image: url(../img/1x3-bad-v2.png);
-   z-index: 2;
 }
 .opponent-board .virus-9 {
    background-image: url(../img/1x3-bad-v3.png);
-   z-index: 2;
 }
 .opponent-board .virus-10 {
    background-image: url(../img/1x4-bad-v2.png);
-   z-index: 2;
 }
 .opponent-board .virus-5.hor {
-   z-index: 2;
    background-image: url(../img/rotate/1x2-bad-rot-v2.png);
 }
 .opponent-board .virus-6.hor {
-   z-index: 2;
    background-image: url(../img/rotate/1x2-bad-rot-v2.png);
 }
 .opponent-board .virus-7.hor {
-   z-index: 2;
    background-image: url(../img/rotate/1x2-bad-rot-v2.png);
 }
 .opponent-board .virus-8.hor {
-   z-index: 2;
    background-image: url(../img/rotate/1x3-bad-rot-v2.png);
 }
 .opponent-board .virus-9.hor {
-   z-index: 2;
    background-image: url(../img/rotate/1x3-bad-rot-v2.png);
 }
 .opponent-board .virus-10.hor {
-   z-index: 2;
    background-image: url(../img/rotate/1x4-bad-rot-v2.png);
 }
 
