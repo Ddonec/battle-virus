@@ -1,7 +1,4 @@
-import React, { useContext } from "react";
-import { GameContext } from "../../context";
-import { generateBoard } from "../../utils/Common";
-import { getRandomFromArray } from "../../utils/Common";
+import React from "react";
 
 function WelcomeHi({ clickCB, clickR }) {
    return (
