@@ -5,11 +5,11 @@ export function random(min, max) {
 }
 
 export function getScale([width, height]) {
-   if (width < height) {
-      return Math.min(width / 720, height / 1280);
-   } else {
-      return Math.min(width / 720, height / 720);
-   }
+   // if (width < height) {
+   //    return Math.min(width / 720, height / 1280);
+   // } else {
+   return Math.min(width / 1280, height / 720);
+   // }
 }
 
 export function getChar(code) {

@@ -344,6 +344,14 @@ body {
 }
 .shipList-container {
    position: absolute;
+   display: flex;
+   flex-wrap: wrap;
+   width: 100px;
+}
+.shipList-container > div:first-child {
+   display: flex;
+   flex-wrap: wrap;
+   width: 60%;
 }
 .align-left {
    top: 28px;
@@ -365,19 +373,23 @@ body {
    background: #b4b4ff;
 }
 .ship-red {
-   background: #ffb4b4;
+   border: 0.5px solid #f82828;
 }
 .ship-0 {
    width: 15px;
+   height: 15px;
 }
 .ship-1 {
-   width: 30px;
+   width: 15px;
+   height: 30px;
 }
 .ship-2 {
-   width: 45px;
+   width: 15px;
+   height: 45px;
 }
 .ship-3 {
-   width: 60px;
+   width: 15px;
+   height: 60px;
 }
 
 .logo-container {

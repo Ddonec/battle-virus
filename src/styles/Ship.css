@@ -207,6 +207,35 @@
    background-image: url(../img/rotate/1x4-bad-rot-v2.png);
 }
 
+.ship-status-you.ship-0 {
+   background-image: url(../img/1x1-good-v2.png);
+}
+.ship-status-you.ship-1 {
+   background-image: url(../img/2x1-good-v2.png);
+}
+.ship-status-you.ship-2 {
+   background-image: url(../img/3x1-good-v2.png);
+}
+.ship-status-you.ship-3 {
+   background-image: url(../img/4x1-good-v2.png);
+}
+.ship-status-opp.ship-0 {
+   background-image: url(../img/1x1-bad-v2.png);
+}
+.ship-status-opp.ship-1 {
+   background-image: url(../img/1x2-bad-v2.png);
+}
+.ship-status-opp.ship-2 {
+   background-image: url(../img/1x3-bad-v2.png);
+}
+.ship-status-opp.ship-3 {
+   background-image: url(../img/1x4-bad-v2.png);
+}
+.ship-status-opp,
+.ship-status-you {
+   background-position: center;
+   background-size: cover;
+}
 /* Destroyed ship cell */
 .cell-red {
    position: absolute;
@@ -271,25 +300,11 @@
    background: rgba(13, 92, 0, 0.8);
 }
 
-@media (pointer: coarse) {
+/* @media (pointer: coarse) {
    .shipList-container {
       display: none;
    }
-   /* .page-container {
-      position: relative;
-      transform: unset;
-      top: unset;
-      left: unset;
-      width: 100vw;
-      height: 100dvh;
-   } */
 }
-
-/* Стили для альбомной ориентации экрана (горизонтальная) */
-@media screen and (orientation: landscape) {
-}
-
-/* Стили для портретной ориентации экрана (вертикальная) */
 @media screen and (orientation: portrait) {
    .page-holder {
       flex-direction: column;
@@ -304,4 +319,4 @@
    .ship-select {
       margin: 0;
    }
-}
+} */
