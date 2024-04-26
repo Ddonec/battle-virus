@@ -128,7 +128,7 @@ body {
    color: #2d48b3;
 }
 .difficulty-wrap {
-   margin-bottom: 20px;
+   margin: 20px 0;
    display: flex;
    width: 275px;
    height: 40px;
@@ -156,7 +156,14 @@ body {
    padding: 10px 10px;
    border-radius: 40px;
 }
-
+.difficulty-logo {
+   width: 255px;
+   height: 290px;
+   background-image: url(../img/hero.png);
+   background-size: cover;
+   margin: auto;
+   transform: scaleX(-1);
+}
 .board-modify {
    margin-bottom: 20px;
 }
@@ -167,9 +174,12 @@ body {
    font-weight: 500;
    cursor: pointer;
    color: #fff;
-   background: #b4b4ff;
-   padding: 10px;
-   border-radius: 10px;
+   background: #2d48b3;
+   border-radius: 40px;
+   height: 40px;
+   align-items: center;
+   justify-content: center;
+   display: flex;
 }
 /* .modify-text:hover {
    color: #a40013;

@@ -18,6 +18,7 @@ function Difficulty({ difficulty, setDifficulty }) {
     return (
         <div className="difficulty-container">
             <h4>Выберете сложность</h4>
+            <div className="difficulty-logo"></div>
             <div className="difficulty-wrap">
             {
                 levels.map(level => {
