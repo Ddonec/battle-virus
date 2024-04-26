@@ -5,6 +5,8 @@
 .table-head-text {
    margin-bottom: 50px;
    margin-top: -50px;
+   font-size: 21px;
+   color: #2d48b3;
 }
 .table-ship {
    position: relative;

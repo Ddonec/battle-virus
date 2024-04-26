@@ -4,15 +4,15 @@ function Difficulty({ difficulty, setDifficulty }) {
     const [levels, setLevels] = useState([
         {
             id: 0,
-            title: "Легкий"
+            title: "Легко"
         },
         {
             id: 1,
-            title: "Средний"
+            title: "Средне"
         },
         {
             id: 2,
-            title: "Сложный"
+            title: "Сложно"
         }
     ]);
     return (
