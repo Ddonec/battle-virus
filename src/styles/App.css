@@ -210,12 +210,42 @@ body {
 .white-cont {
    display: flex;
    gap: 40px;
+   align-items: center;
+   padding: 30px;
 }
 .hero-img {
    width: 240px;
    height: 277px;
    background-image: url(../img/hero-white-bg.png);
    background-size: cover;
+}
+.hero-loser-1 {
+   background-image: url(../img/lose-hero-1.png);
+   background-position: center;
+   background-size: cover;
+   width: 355px;
+   height: 388px;
+}
+.hero-loser-2 {
+   background-image: url(../img/lose-hero-2.png);
+   background-position: center;
+   background-size: cover;
+   width: 330px;
+   height: 420px;
+}
+.hero-loser-3 {
+   background-image: url(../img/lose-hero-3.png);
+   background-position: center;
+   background-size: cover;
+   width: 355px;
+   height: 388px;
+}
+.hero-img-winner {
+   background-image: url(../img/winner-hero-img.png);
+   background-position: center;
+   background-size: cover;
+   width: 378px;
+   height: 330px;
 }
 .border-w-div {
    color: #fff;
@@ -263,11 +293,11 @@ body {
 
 .game-end-container {
    position: absolute;
-   background: #fff;
+   background: #1c34a2;
    /* min-width: 400px;
    min-height: 200px; */
-   width: 1152px;
-   height: 648px;
+   width: 1280px;
+   height: 720px;
    font-size: 40px;
    padding: 10px 30px;
    border-radius: 10px;
@@ -278,6 +308,31 @@ body {
    animation-name: appearTransition;
    display: flex;
    flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.game-end-box {
+   background: #fff;
+   border-radius: 30px;
+}
+.game-end-logo {
+   width: 180px;
+   height: 50px;
+   background-image: url(../img/logo-white.png);
+   background-size: contain;
+   position: absolute;
+   top: 35px;
+   background-repeat: no-repeat;
+}
+.go-next-btn {
+   background: #e83459;
+   color: #fff;
+   font-size: 18px;
+   width: 220px;
+   height: 40px;
+   border-radius: 40px;
+   margin: 0 auto;
+   display: flex;
    align-items: center;
    justify-content: center;
 }
@@ -350,11 +405,18 @@ body {
    color: #2c42b6;
    width: 670px;
    text-align: left;
-   margin: 20px auto;
+   margin: 0 auto;
    background-image: url(../img/bg-dialog.png);
    padding: 20px;
    background-size: cover;
    height: 304px;
+   font-size: 32px;
+   text-align: center;
+   scale: 0.7;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
 }
 .winner-subtitle {
    color: #000;
