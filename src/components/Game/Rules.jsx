@@ -1,11 +1,6 @@
-import React, { useContext } from "react";
-import { GameContext } from "../../context";
-import { generateBoard } from "../../utils/Common";
-import { getRandomFromArray } from "../../utils/Common";
+import React from "react";
 
 function Rules({ clickCB }) {
-
-
    return (
       <>
          <div className="game-start-container">

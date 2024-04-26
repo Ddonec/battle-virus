@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { BoardContext } from "../../context";
 import Ship from "../Ship";
+// import ModifyBoard from "./ModifyBoard";
 
 function ShipSelect({ ships }) {
    const { dragStart } = useContext(BoardContext);
@@ -24,8 +25,9 @@ function ShipSelect({ ships }) {
    }
    return (
       <div className="ship-select">
-         <h4>Ваши ресурсы</h4>
+         <h4>Ваши инструменты</h4>
          <div className="ship-wrapper">{holders}</div>
+         {/* <ModifyBoard /> */}
       </div>
    );
 }

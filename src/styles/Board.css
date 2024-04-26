@@ -5,10 +5,11 @@
 .table-head-text {
    margin-bottom: 50px;
    margin-top: -50px;
+   font-size: 21px;
+   color: #2d48b3;
 }
 .table-ship {
    position: relative;
-   border-collapse: collapse;
    border-spacing: 0px;
    background: white;
 }
@@ -28,8 +29,19 @@
    position: relative;
    width: 40px;
    height: 40px;
+}
 
-   border: 1px solid #b4b4ff;
+.your-board .cell {
+   border: 1.5px solid #69a2d9;
+}
+.your-board .table-ship {
+   border: 3.5px solid #69a2d9;
+}
+.opponent-board .cell {
+   border: 1.5px solid #96bdc4;
+}
+.opponent-board .table-ship {
+   border: 3.5px solid #96bdc4;
 }
 .clickable {
    cursor: pointer;

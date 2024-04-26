@@ -4,16 +4,11 @@ import { generateBoard } from "../../utils/Common";
 import { getRandomFromArray } from "../../utils/Common";
 
 function GameEnd({ setBoard1, setBoard2 }) {
-   const stringArr = [
-      "Вы проиграли всего одну схватку, но эта борьба важна всему человечеству.Не сдавайтесь, и победа будет вопросом времени",
-      "Вы проиграли всего одну схватку, но эта борьба важна всему человечеству.Не сдавайтесь, и победа будет вопросом времени",
-      "Вы проиграли всего одну схватку, но эта борьба важна всему человечеству.Не сдавайтесь, и победа будет вопросом времени",
-   ];
-   const stringArrWin = [
-      "Вы успешно справились с врагами! Ваш вклад был важен для человечества. Кто знает, это могла быть опасная пандемия, но благодаря вам этого удалось избежать!",
-      "Вы успешно справились с врагами! Ваш вклад был важен для человечества. Кто знает, это могла быть опасная пандемия, но благодаря вам этого удалось избежать!",
-      "Вы успешно справились с врагами! Ваш вклад был важен для человечества. Кто знает, это могла быть опасная пандемия, но благодаря вам этого удалось избежать!",
-   ];
+   const stringTitleLostArr = ["Почти получилось! ", "Противник хорошо маскируется", "Вы раскрыты, миссия провалена!"];
+   const stringArr = ["Готовьте новых агентов и продолжайте миссию!", "Используйте план Б и повторите попытку!", "Не сдавайтесь, попробуйте еще раз! "];
+   const stringArrWin = ["Все инфекции найдены и обезврежены! Мы гордимся, что Вы часть нашей команды!"];
+
+   const imgArr = ["hero-loser-1", "hero-loser-2", "hero-loser-3"];
 
    const { winner } = useContext(GameContext);
 
@@ -24,26 +19,31 @@ function GameEnd({ setBoard1, setBoard2 }) {
    return (
       <>
          {winner !== null && (
-            <div onClick={resetGame} className="game-end-container">
-               <div className="white-cont">
-                  <div className="hero-img"></div>
-                  <div>
-                     <h3 className="game-end-header">
-                        {winner === 0 ? (
-                           <>
-                              Проигран бой, но не война
-                              <p className="winner-subtitle">{getRandomFromArray(stringArr)}</p>
-                           </>
-                        ) : (
-                           <>
-                              Поздравляю с победой!
-                              <p className="winner-subtitle">{getRandomFromArray(stringArrWin)}</p>
-                           </>
-                        )}
-                     </h3>
+            <div className="game-end-container">
+               <div className="game-end-logo"></div>
+               <div className="game-end-box">
+                  <div className="white-cont">
+                     <div className={winner === 0 ? getRandomFromArray(imgArr) : "hero-img-winner"}></div>
+                     <div>
+                        <h3 className="game-end-header">
+                           {winner === 0 ? (
+                              <>
+                                 {getRandomFromArray(stringTitleLostArr)}
+                                 <p className="winner-subtitle">{getRandomFromArray(stringArr)}</p>
+                              </>
+                           ) : (
+                              <>
+                                 Поздравляем, Ваша миссия выполнена!
+                                 <p className="winner-subtitle">{getRandomFromArray(stringArrWin)}</p>
+                              </>
+                           )}
+                        </h3>
+                        <div onClick={resetGame} className="go-next-btn">
+                           Играть снова
+                        </div>
+                     </div>
                   </div>
                </div>
-                     <h5 className="shadowed-tiny">Играть снова</h5>
             </div>
          )}
       </>

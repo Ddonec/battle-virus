@@ -83,146 +83,160 @@
 }
 .ship {
    background-position: center;
-   background-size: cover;
+   background-size: contain;
    background-repeat: no-repeat;
 }
 .your-board .virus-1 {
-   background-image: url(../img/1x1-good-v2.png);
+   background-image: url(../img/g-v-1.png);
 }
 .your-board .virus-2 {
-   background-image: url(../img/1x1-good-v2.png);
+   background-image: url(../img/g-v-1.png);
 }
 .your-board .virus-3 {
-   background-image: url(../img/1x1-good-v2.png);
+   background-image: url(../img/g-v-1.png);
 }
 .your-board .virus-4 {
-   background-image: url(../img/1x1-good-v2.png);
+   background-image: url(../img/g-v-1.png);
 }
 .your-board .virus-5 {
-   background-image: url(../img/2x1-good-v2.png);
+   background-image: url(../img/g-v-2.png);
 }
 .your-board .virus-6 {
-   background-image: url(../img/2x1-good-v2.png);
+   background-image: url(../img/g-v-2.png);
 }
 .your-board .virus-7 {
-   background-image: url(../img/2x1-good-v2.png);
+   background-image: url(../img/g-v-2.png);
 }
 .your-board .virus-8 {
-   background-image: url(../img/3x1-good-v2.png);
+   background-image: url(../img/g-v-3.png);
 }
 .your-board .virus-9 {
-   background-image: url(../img/3x1-good-v2.png);
+   background-image: url(../img/g-v-3.png);
 }
 .your-board .virus-10 {
-   background-image: url(../img/4x1-good-v2.png);
+   background-image: url(../img/g-v-4.png);
 }
 
 .your-board .virus-1.hor,
 .ship-wrapper .virus-1 {
-   background-image: url(../img/1x1-good-v2.png);
+   background-image: url(../img/g-v-1.png);
 }
 .your-board .virus-2.hor,
 .ship-wrapper .virus-2 {
-   background-image: url(../img/1x1-good-v2.png);
+   background-image: url(../img/g-v-1.png);
 }
 .your-board .virus-3.hor,
 .ship-wrapper .virus-3 {
-   background-image: url(../img/1x1-good-v2.png);
+   background-image: url(../img/g-v-1.png);
 }
 .your-board .virus-4.hor,
 .ship-wrapper .virus-4 {
-   background-image: url(../img/1x1-good-v2.png);
+   background-image: url(../img/g-v-1.png);
 }
 .your-board .virus-5.hor,
 .ship-wrapper .virus-5 {
-   background-image: url(../img/rotate/2x1-good-rot-v2.png);
+   background-image: url(../img/g-h-2.png);
 }
 .your-board .virus-6.hor,
 .ship-wrapper .virus-6 {
-   background-image: url(../img/rotate/2x1-good-rot-v2.png);
+   background-image: url(../img/g-h-2.png);
 }
 .your-board .virus-7.hor,
 .ship-wrapper .virus-7 {
-   background-image: url(../img/rotate/2x1-good-rot-v2.png);
+   background-image: url(../img/g-h-2.png);
 }
 .your-board .virus-8.hor,
 .ship-wrapper .virus-8 {
-   background-image: url(../img/rotate/3x1-good-rot-v2.png);
+   background-image: url(../img/g-h-3.png);
 }
 .your-board .virus-9.hor,
 .ship-wrapper .virus-9 {
-   background-image: url(../img/rotate/3x1-good-rot-v2.png);
+   background-image: url(../img/g-h-3.png);
 }
 .your-board .virus-10.hor,
 .ship-wrapper .virus-10 {
-   background-image: url(../img/rotate/4x1-good-rot-v2.png);
+   background-image: url(../img/g-h-4.png);
 }
 
 .opponent-board .virus-1 {
-   background-image: url(../img/1x1-bad-v2.png);
-   z-index: 2;
+   background-image: url(../img/b-v-1.png);
 }
 .opponent-board .virus-2 {
-   background-image: url(../img/1x1-bad-v2.png);
-   z-index: 2;
+   background-image: url(../img/b-v-1.png);
 }
 .opponent-board .virus-3 {
-   background-image: url(../img/1x1-bad-v2.png);
-   z-index: 2;
+   background-image: url(../img/b-v-1.png);
 }
 .opponent-board .virus-4 {
-   background-image: url(../img/1x1-bad-v2.png);
-   z-index: 2;
+   background-image: url(../img/b-v-1.png);
 }
 .opponent-board .virus-5 {
-   background-image: url(../img/1x2-bad-v2.png);
-   z-index: 2;
+   background-image: url(../img/b-v-2.png);
 }
 .opponent-board .virus-6 {
-   background-image: url(../img/1x2-bad-v2.png);
-   z-index: 2;
+   background-image: url(../img/b-v-2.png);
 }
 .opponent-board .virus-7 {
-   background-image: url(../img/1x2-bad-v2.png);
-   z-index: 2;
+   background-image: url(../img/b-v-2.png);
 }
 .opponent-board .virus-8 {
-   background-image: url(../img/1x3-bad-v2.png);
-   z-index: 2;
+   background-image: url(../img/b-v-3.png);
 }
 .opponent-board .virus-9 {
-   background-image: url(../img/1x3-bad-v3.png);
-   z-index: 2;
+   background-image: url(../img/b-v-3.png);
 }
 .opponent-board .virus-10 {
-   background-image: url(../img/1x4-bad-v2.png);
-   z-index: 2;
+   background-image: url(../img/b-v-4.png);
 }
 .opponent-board .virus-5.hor {
-   z-index: 2;
-   background-image: url(../img/rotate/1x2-bad-rot-v2.png);
+   background-image: url(../img/b-h-2.png);
 }
 .opponent-board .virus-6.hor {
-   z-index: 2;
-   background-image: url(../img/rotate/1x2-bad-rot-v2.png);
+   background-image: url(../img/b-h-2.png);
 }
 .opponent-board .virus-7.hor {
-   z-index: 2;
-   background-image: url(../img/rotate/1x2-bad-rot-v2.png);
+   background-image: url(../img/b-h-2.png);
 }
 .opponent-board .virus-8.hor {
-   z-index: 2;
-   background-image: url(../img/rotate/1x3-bad-rot-v2.png);
+   background-image: url(../img/b-h-3.png);
 }
 .opponent-board .virus-9.hor {
-   z-index: 2;
-   background-image: url(../img/rotate/1x3-bad-rot-v2.png);
+   background-image: url(../img/b-h-3.png);
 }
 .opponent-board .virus-10.hor {
-   z-index: 2;
-   background-image: url(../img/rotate/1x4-bad-rot-v2.png);
+   background-image: url(../img/b-h-4.png);
 }
 
+.ship-status-you.ship-0 {
+   background-image: url(../img/g-v-1.png);
+}
+.ship-status-you.ship-1 {
+   background-image: url(../img/g-v-2.png);
+}
+.ship-status-you.ship-2 {
+   background-image: url(../img/g-v-3.png);
+}
+.ship-status-you.ship-3 {
+   background-image: url(../img/g-v-4.png);
+}
+.ship-status-opp.ship-0 {
+   background-image: url(../img/b-v-1.png);
+}
+.ship-status-opp.ship-1 {
+   background-image: url(../img/b-v-2.png);
+}
+.ship-status-opp.ship-2 {
+   background-image: url(../img/b-v-3.png);
+}
+.ship-status-opp.ship-3 {
+   background-image: url(../img/b-v-4.png);
+}
+.ship-status-opp,
+.ship-status-you {
+   background-position: center;
+   background-size: contain;
+   background-repeat: no-repeat;
+}
 /* Destroyed ship cell */
 .cell-red {
    position: absolute;
@@ -265,7 +279,7 @@
    z-index: 1;
    width: 40px;
    height: 40px;
-   background: rgba(236, 236, 236, 0.5);
+   /* background: rgba(236, 236, 236, 0.5); */
 }
 
 .cell-circle {
@@ -275,37 +289,23 @@
 }
 
 .your-board .cell-missed > .cell-circle {
-   background: #2b449e;
+   background: #69a2d9;
 }
 .your-board .cell-bounds > .cell-circle {
-   background: #2b449e;
+   background: #69a2d9;
 }
 .cell-missed > .cell-circle {
-   background: rgba(13, 92, 0, 0.8);
+   background: #96bdc4;
 }
 .cell-bounds > .cell-circle {
-   background: rgba(13, 92, 0, 0.8);
+   background: #96bdc4;
 }
 
-@media (pointer: coarse) {
+/* @media (pointer: coarse) {
    .shipList-container {
       display: none;
    }
-   /* .page-container {
-      position: relative;
-      transform: unset;
-      top: unset;
-      left: unset;
-      width: 100vw;
-      height: 100dvh;
-   } */
 }
-
-/* Стили для альбомной ориентации экрана (горизонтальная) */
-@media screen and (orientation: landscape) {
-}
-
-/* Стили для портретной ориентации экрана (вертикальная) */
 @media screen and (orientation: portrait) {
    .page-holder {
       flex-direction: column;
@@ -320,4 +320,4 @@
    .ship-select {
       margin: 0;
    }
-}
+} */
