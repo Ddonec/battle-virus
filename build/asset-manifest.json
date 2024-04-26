@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Sea-Battle/static/css/main.b080b35c.css",
+    "main.js": "/Sea-Battle/static/js/main.b8230536.js",
+    "static/media/winner-hero-img.png": "/Sea-Battle/static/media/winner-hero-img.fe35082d3c4680b880b2.png",
+    "static/media/lose-hero-1.png": "/Sea-Battle/static/media/lose-hero-1.67f0010fe49eaddfadf8.png",
+    "static/media/lose-hero-3.png": "/Sea-Battle/static/media/lose-hero-3.c607fdde2febd25e8cec.png",
+    "static/media/lose-hero-2.png": "/Sea-Battle/static/media/lose-hero-2.40c7adc4a2437b773b18.png",
+    "static/media/bg-wawes.png": "/Sea-Battle/static/media/bg-wawes.1582b0e2d6eaba21b85c.png",
+    "static/media/hero.png": "/Sea-Battle/static/media/hero.6dc211ae23e2844c8b23.png",
+    "static/media/hero-white-bg.png": "/Sea-Battle/static/media/hero-white-bg.bbb12635acef6c8a970d.png",
+    "static/media/b-v-4.png": "/Sea-Battle/static/media/b-v-4.13275d361dba32a9437e.png",
+    "index.html": "/Sea-Battle/index.html",
+    "main.b080b35c.css.map": "/Sea-Battle/static/css/main.b080b35c.css.map",
+    "main.b8230536.js.map": "/Sea-Battle/static/js/main.b8230536.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b080b35c.css",
+    "static/js/main.b8230536.js"
+  ]
+}
