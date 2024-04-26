@@ -18,7 +18,7 @@ body {
 
    width: 1280px;
    height: 720px;
-   padding: 20px 10px;
+   /* padding: 20px 10px; */
 }
 .no-select {
    -webkit-touch-callout: none;
@@ -38,12 +38,14 @@ body {
    text-align: center;
    position: relative;
 
-   width: 100%;
-   height: 100%;
-   background: white;
-   border-radius: 20px;
-   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
-   background-image: linear-gradient(white, rgba(219, 219, 255, 0.3));
+   width: 1280px;
+   height: 720px;
+   /* background: white; */
+   border-radius: 20px 20px 0 0;
+   /* box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2); */
+   background-image: url(../img/bg-wawes.png);
+   background-size: cover;
+   background-position: bottom;
 }
 
 .page-holder {
@@ -90,10 +92,11 @@ body {
 }
 
 .ship-select {
-   border: 1px solid #b4b4ff;
+   /* border: 1px solid #b4b4ff; */
    width: 300px;
    /* margin-left: -150px; */
-   background: white;
+   background: rgba(255, 255, 255, 0.5);
+   border-radius: 20px;
 }
 .ship-select h4 {
    font-size: 21px;
@@ -116,9 +119,10 @@ body {
 }
 
 .right-wrap {
-   border: 1px solid #b4b4ff;
+   /* border: 1px solid #b4b4ff; */
    padding: 20px;
-   background: white;
+   border-radius: 20px;
+   background: rgba(255, 255, 255, 0.5);
 }
 
 .difficulty-container > h4 {
@@ -395,9 +399,9 @@ body {
    height: 15px;
    margin: 5px;
 }
-.ship-blue {
+/* .ship-blue {
    background: #b4b4ff;
-}
+} */
 .ship-red {
    border: 0.5px solid #f82828;
 }
