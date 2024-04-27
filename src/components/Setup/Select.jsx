@@ -17,7 +17,7 @@ function ShipSelect({ ships, randomiseBoard, resetBoard, emptyBoard }) {
          shipArr.push(elem);
       }
 
-      holders.push(
+      holders.unshift(
          <div key={i} className="ship-holder">
             {shipArr}
          </div>
