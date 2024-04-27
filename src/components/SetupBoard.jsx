@@ -143,6 +143,7 @@ function SetupBoard({ scale, setBoard1, difficulty, setDifficulty }) {
       setShips(getSetupShips());
       setBoard([]);
    }
+
    return (
       <BoardContext.Provider
          value={{
@@ -158,11 +159,13 @@ function SetupBoard({ scale, setBoard1, difficulty, setDifficulty }) {
       >
          <CSSTransition in={true} appear={true} timeout={1000} classNames="page-holder">
             <div className="page-holder">
-               <Select ships={ships} setShips={setShips}></Select>
+               <Select ships={ships} setShips={setShips} {...{ randomiseBoard, resetBoard, emptyBoard: board.length === 0 }}>
+                  {" "}
+               </Select>
                <Table></Table>
                <div className="right-wrap">
                   <Difficulty {...{ difficulty, setDifficulty }} />
-                  <ModifyBoard {...{ randomiseBoard, resetBoard }} />
+                  {/* <ModifyBoard {...{ randomiseBoard, resetBoard }} /> */}
                   <Button className="default-button " disabled={board.length !== 10} onClick={board.length === 10 ? () => updateBoard() : null}>
                      Начать
                   </Button>
