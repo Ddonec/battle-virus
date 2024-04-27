@@ -26,7 +26,7 @@ function ShipSelect({ ships, randomiseBoard, resetBoard, emptyBoard }) {
 
    return (
       <div className="ship-select">
-         <h4>Ваши инструменты</h4>
+         <h4>Ваши помощники</h4>
          <div className="ship-wrapper">{holders}</div>
          <ModifyBoard {...{ randomiseBoard, resetBoard, emptyBoard }} />
       </div>
