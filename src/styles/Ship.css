@@ -87,149 +87,149 @@
    background-repeat: no-repeat;
 }
 .your-board .virus-1 {
-   background-image: url(../img/g-v-1.png);
+   background-image: url(../img/good-last-1.png);
 }
 .your-board .virus-2 {
-   background-image: url(../img/g-v-1.png);
+   background-image: url(../img/good-last-1.png);
 }
 .your-board .virus-3 {
-   background-image: url(../img/g-v-1.png);
+   background-image: url(../img/good-last-1.png);
 }
 .your-board .virus-4 {
-   background-image: url(../img/g-v-1.png);
+   background-image: url(../img/good-last-1.png);
 }
 .your-board .virus-5 {
-   background-image: url(../img/g-v-2.png);
+   background-image: url(../img/god-last-v2.png);
 }
 .your-board .virus-6 {
-   background-image: url(../img/g-v-2.png);
+   background-image: url(../img/god-last-v2.png);
 }
 .your-board .virus-7 {
-   background-image: url(../img/g-v-2.png);
+   background-image: url(../img/god-last-v2.png);
 }
 .your-board .virus-8 {
-   background-image: url(../img/g-v-3.png);
+   background-image: url(../img/good-last-v3.png);
 }
 .your-board .virus-9 {
-   background-image: url(../img/g-v-3.png);
+   background-image: url(../img/good-last-v3.png);
 }
 .your-board .virus-10 {
-   background-image: url(../img/g-v-4.png);
+   background-image: url(../img/good-last-v4.png);
 }
 
 .your-board .virus-1.hor,
 .ship-wrapper .virus-1 {
-   background-image: url(../img/g-v-1.png);
+   background-image: url(../img/good-last-1.png);
 }
 .your-board .virus-2.hor,
 .ship-wrapper .virus-2 {
-   background-image: url(../img/g-v-1.png);
+   background-image: url(../img/good-last-1.png);
 }
 .your-board .virus-3.hor,
 .ship-wrapper .virus-3 {
-   background-image: url(../img/g-v-1.png);
+   background-image: url(../img/good-last-1.png);
 }
 .your-board .virus-4.hor,
 .ship-wrapper .virus-4 {
-   background-image: url(../img/g-v-1.png);
+   background-image: url(../img/good-last-1.png);
 }
 .your-board .virus-5.hor,
 .ship-wrapper .virus-5 {
-   background-image: url(../img/g-h-2.png);
+   background-image: url(../img/good-last-h2.png);
 }
 .your-board .virus-6.hor,
 .ship-wrapper .virus-6 {
-   background-image: url(../img/g-h-2.png);
+   background-image: url(../img/good-last-h2.png);
 }
 .your-board .virus-7.hor,
 .ship-wrapper .virus-7 {
-   background-image: url(../img/g-h-2.png);
+   background-image: url(../img/good-last-h2.png);
 }
 .your-board .virus-8.hor,
 .ship-wrapper .virus-8 {
-   background-image: url(../img/g-h-3.png);
+   background-image: url(../img/good-last-h3.png);
 }
 .your-board .virus-9.hor,
 .ship-wrapper .virus-9 {
-   background-image: url(../img/g-h-3.png);
+   background-image: url(../img/good-last-h3.png);
 }
 .your-board .virus-10.hor,
 .ship-wrapper .virus-10 {
-   background-image: url(../img/g-h-4.png);
+   background-image: url(../img/good-last-h4.png);
 }
 
 .opponent-board .virus-1 {
-   background-image: url(../img/b-v-1.png);
+   background-image: url(../img/bad-last-1.png);
 }
 .opponent-board .virus-2 {
-   background-image: url(../img/b-v-1.png);
+   background-image: url(../img/bad-last-1.png);
 }
 .opponent-board .virus-3 {
-   background-image: url(../img/b-v-1.png);
+   background-image: url(../img/bad-last-1.png);
 }
 .opponent-board .virus-4 {
-   background-image: url(../img/b-v-1.png);
+   background-image: url(../img/bad-last-1.png);
 }
 .opponent-board .virus-5 {
-   background-image: url(../img/b-v-2.png);
+   background-image: url(../img/bad-last-v2.png);
 }
 .opponent-board .virus-6 {
-   background-image: url(../img/b-v-2.png);
+   background-image: url(../img/bad-last-v2.png);
 }
 .opponent-board .virus-7 {
-   background-image: url(../img/b-v-2.png);
+   background-image: url(../img/bad-last-v2.png);
 }
 .opponent-board .virus-8 {
-   background-image: url(../img/b-v-3.png);
+   background-image: url(../img/bad-last-v3.png);
 }
 .opponent-board .virus-9 {
-   background-image: url(../img/b-v-3.png);
+   background-image: url(../img/bad-last-v3.png);
 }
 .opponent-board .virus-10 {
-   background-image: url(../img/b-v-4.png);
+   background-image: url(../img/bad-last-v4.png);
 }
 .opponent-board .virus-5.hor {
-   background-image: url(../img/b-h-2.png);
+   background-image: url(../img/bad-last-h2.png);
 }
 .opponent-board .virus-6.hor {
-   background-image: url(../img/b-h-2.png);
+   background-image: url(../img/bad-last-h2.png);
 }
 .opponent-board .virus-7.hor {
-   background-image: url(../img/b-h-2.png);
+   background-image: url(../img/bad-last-h2.png);
 }
 .opponent-board .virus-8.hor {
-   background-image: url(../img/b-h-3.png);
+   background-image: url(../img/bad-last-h3.png);
 }
 .opponent-board .virus-9.hor {
-   background-image: url(../img/b-h-3.png);
+   background-image: url(../img/bad-last-h3.png);
 }
 .opponent-board .virus-10.hor {
-   background-image: url(../img/b-h-4.png);
+   background-image: url(../img/bad-last-h4.png);
 }
 
 .ship-status-you.ship-0 {
-   background-image: url(../img/g-v-1.png);
+   background-image: url(../img/good-last-1.png);
 }
 .ship-status-you.ship-1 {
-   background-image: url(../img/g-v-2.png);
+   background-image: url(../img/god-last-v2.png);
 }
 .ship-status-you.ship-2 {
-   background-image: url(../img/g-v-3.png);
+   background-image: url(../img/good-last-v3.png);
 }
 .ship-status-you.ship-3 {
-   background-image: url(../img/g-v-4.png);
+   background-image: url(../img/good-last-v4.png);
 }
 .ship-status-opp.ship-0 {
-   background-image: url(../img/b-v-1.png);
+   background-image: url(../img/bad-last-1.png);
 }
 .ship-status-opp.ship-1 {
-   background-image: url(../img/b-v-2.png);
+   background-image: url(../img/bad-last-v2.png);
 }
 .ship-status-opp.ship-2 {
-   background-image: url(../img/b-v-3.png);
+   background-image: url(../img/bad-last-v3.png);
 }
 .ship-status-opp.ship-3 {
-   background-image: url(../img/b-v-4.png);
+   background-image: url(../img/bad-last-v4.png);
 }
 .ship-status-opp,
 .ship-status-you {
