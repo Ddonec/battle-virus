@@ -10,6 +10,7 @@ import { CSSTransition } from "react-transition-group";
 import WelcomeHi from "./components/Game/WelcomeHello";
 import Rules from "./components/Game/Rules";
 import StartModal from "./components/Game/StartModal";
+import RulesLink from "./components/Setup/RulesLink";
 
 function App() {
    const size = useWindowSize();
@@ -33,7 +34,6 @@ function App() {
    };
    const closeBtnModal = () => {
       console.log(12);
-
       setShowStartModal(false);
    };
 
@@ -51,6 +51,7 @@ function App() {
             {showStart && <WelcomeHi clickCB={closeBtb} clickR={rulesBtn} />}
             {showRules && <Rules clickCB={closeBtb} />}
             {showStartModal && <StartModal clickHide={closeBtnModal} />}
+            {board1.length === 10 ? "" : <RulesLink ClickRL={rulesBtn}></RulesLink>}
          </div>
       </>
    );
