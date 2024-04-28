@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { BoardContext } from "../../context";
 import Ship from "../Ship";
-// import ModifyBoard from "./ModifyBoard";
+import ModifyBoard from "./ModifyBoard";
 
-function ShipSelect({ ships }) {
+function ShipSelect({ ships, randomiseBoard, resetBoard, emptyBoard }) {
    const { dragStart } = useContext(BoardContext);
    const holders = [];
 
@@ -17,17 +17,18 @@ function ShipSelect({ ships }) {
          shipArr.push(elem);
       }
 
-      holders.push(
+      holders.unshift(
          <div key={i} className="ship-holder">
             {shipArr}
          </div>
       );
    }
+
    return (
       <div className="ship-select">
-         <h4>Ваши инструменты</h4>
+         <h4>Ваши помощники</h4>
          <div className="ship-wrapper">{holders}</div>
-         {/* <ModifyBoard /> */}
+         <ModifyBoard {...{ randomiseBoard, resetBoard, emptyBoard }} />
       </div>
    );
 }

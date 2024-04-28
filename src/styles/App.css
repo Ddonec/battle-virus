@@ -54,6 +54,7 @@ body {
    align-items: center;
    text-align: center;
    position: relative;
+   width: 100%;
 }
 .page-holder-appear {
    opacity: 0;
@@ -93,10 +94,14 @@ body {
 
 .ship-select {
    /* border: 1px solid #b4b4ff; */
-   width: 300px;
+   width: 368px;
    /* margin-left: -150px; */
    background: rgba(255, 255, 255, 0.5);
-   border-radius: 20px;
+   border-radius: 0 20px 20px 0;
+   height: 540px;
+   display: flex;
+   flex-direction: column;
+   margin-right: 26px;
 }
 .ship-select h4 {
    font-size: 21px;
@@ -121,20 +126,26 @@ body {
 .right-wrap {
    /* border: 1px solid #b4b4ff; */
    padding: 20px;
-   border-radius: 20px;
+   border-radius: 20px 0 0 20px;
    background: rgba(255, 255, 255, 0.5);
+   height: 540px;
+   display: flex;
+   flex-direction: column;
+   width: 352px;
+   align-items: center;
+   margin-left: 26px;
 }
 
 .difficulty-container > h4 {
    margin: 0;
-   margin-bottom: 10px;
+   margin-bottom: 30px;
    font-size: 21px;
    color: #2d48b3;
 }
 .difficulty-wrap {
-   margin: 20px 0;
+   margin: 40px 0 20px;
    display: flex;
-   width: 275px;
+   width: 306px;
    height: 40px;
    border: 1px solid #2d48b3;
    border-radius: 40px;
@@ -154,7 +165,8 @@ body {
    cursor: pointer;
 }
 .difficulty-text {
-   font-size: 16px;
+   font-size: 17px;
+   letter-spacing: 1px;
    font-weight: 600;
    color: #2d48b3;
    padding: 10px 10px;
@@ -162,14 +174,15 @@ body {
 }
 .difficulty-logo {
    width: 255px;
-   height: 290px;
-   background-image: url(../img/hero.png);
+   height: 300px;
+   background-image: url(../img/hero-prepair.png);
    background-size: cover;
    margin: auto;
-   transform: scaleX(-1);
+   /* transform: scaleX(-1); */
 }
 .board-modify {
-   margin-bottom: 20px;
+   margin: auto auto 20px;
+   width: calc(100% - 40px);
 }
 .modify-text {
    text-underline-offset: 5px;
@@ -191,10 +204,12 @@ body {
 
 .logo {
    width: 202px;
-   height: 63px;
+   height: 60px;
    background-image: url(../img/logo-pm.png);
-   background-size: cover;
+   background-size: contain;
+   background-repeat: no-repeat;
    background-position: center;
+   margin: 10px;
 }
 .blue-container {
    background: #2c42b6;
@@ -202,10 +217,19 @@ body {
    width: calc(100% - 100px);
    display: flex;
    align-items: center;
-   margin: 20px 0;
+   /* margin: 10px 0 0; */
    padding: 40px 10px;
    gap: 40px;
    justify-content: center;
+}
+.start-blue {
+   width: 100%;
+   height: 100%;
+   border-radius: 20px 20px 0 0;
+   background-image: url(../img/bg-main-start-modal.jpeg);
+   background-position: center;
+   background-size: cover;
+   justify-content: end;
 }
 .white-cont {
    display: flex;
@@ -265,18 +289,111 @@ body {
    align-items: flex-start;
    display: flex;
    flex-direction: column;
+   width: 50%;
+   align-items: center;
 }
 .welcome-title {
    color: #fff;
    margin: 0;
-   font-size: 60px;
+   font-size: 48px;
    letter-spacing: 6px;
+   font-weight: 500;
 }
+.start-title {
+   font-size: 106px;
+   font-weight: 400;
+}
+
 .welcome-subtitle {
    margin: 10px;
    color: #fff;
-   font-size: 35px;
+   font-size: 12.8px;
    font-weight: 400;
+}
+.start-sub {
+   font-size: 47px;
+   font-weight: 400;
+   margin-bottom: 60px;
+}
+.blue-text {
+   color: #152d97;
+}
+.black-text {
+   color: #000;
+}
+.instruction {
+   width: 531px;
+}
+.rules {
+   width: 510px;
+   text-align: start;
+   margin: 0;
+}
+.rules > p {
+   display: flex;
+}
+.rules-and-help {
+   position: absolute;
+   bottom: 15px;
+   left: 40px;
+   display: flex;
+   font-size: 19px;
+   color: #2d48b3;
+   font-weight: 500;
+}
+.ruler-s-p {
+   display: flex;
+   font-size: 19px;
+   align-items: center;
+   gap: 10px;
+}
+.ruler-s-p p:last-child {
+   font-size: 11px;
+}
+.help-info-box {
+   display: flex;
+   margin-left: 185px;
+   align-items: center;
+}
+.help-info__title {
+   font-size: 15px;
+}
+.help-info__subtitle {
+   font-size: 13px;
+   color: #000;
+   font-weight: 400;
+   margin-left: 20px;
+}
+.welcome-bg-container {
+   width: 100%;
+   height: 100%;
+   background-image: url(../img/bg-wawes.png);
+   background-size: cover;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.rules-bg-container {
+   width: 100%;
+   height: 100%;
+   background-image: url(../img/rules-bg-new.jpeg);
+   background-size: cover;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.number-list,
+.info-rect {
+   width: 22px;
+   height: 22px;
+   border-radius: 50%;
+   border: 1px solid #1b30a1;
+   flex-shrink: 0;
+   color: #1b30a1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-right: 15px;
 }
 .rules-title {
    color: #fff;
@@ -290,7 +407,24 @@ body {
    display: flex;
    gap: 20px;
 }
-
+.welocme-white-container {
+   padding: 40px;
+   border-radius: 30px;
+   background: #fff;
+   align-items: center;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   width: 755px;
+}
+.rules-white {
+   width: 590px;
+}
+.lets-ready {
+   color: #172f99;
+   font-size: 18px;
+   font-weight: 500;
+}
 .game-end-container {
    position: absolute;
    background: #1c34a2;
@@ -344,7 +478,7 @@ body {
    width: 1280px;
    height: 720px;
    font-size: 40px;
-   padding: 10px 30px;
+   /* padding: 10px 30px; */
    border-radius: 10px;
    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
    cursor: pointer;
@@ -377,7 +511,7 @@ body {
    margin-left: 30px;
 }
 .close-btn {
-   border-radius: 10px;
+   border-radius: 30px;
    background: #e02b2d;
    color: white;
    /* padding: 10px 30px; */
@@ -389,7 +523,7 @@ body {
    font-size: 16px;
 }
 .rule-btn {
-   border-radius: 10px;
+   border-radius: 30px;
    background: #fff;
    border: 3px solid #1977d0;
    color: #1977d0;
@@ -447,11 +581,11 @@ body {
 }
 .align-left {
    top: 28px;
-   left: -115px;
+   left: 56px;
 }
 .align-right {
    top: 28px;
-   right: -100px;
+   right: 56px;
 }
 
 .list-holder {
@@ -497,7 +631,7 @@ body {
    transform: translateX(-50%);
    background-image: url(../img/logo-pm.png);
    background-size: cover;
-   width: 130px;
+   width: 151px;
    height: 40px;
 }
 
@@ -515,4 +649,10 @@ body {
    height: 40px;
    display: inline-block;
    vertical-align: middle;
+}
+.rules-1-b {
+   margin: 5px 0 20px;
+}
+.none {
+   display: none;
 }

@@ -43,7 +43,7 @@ function TableShip() {
 
    return (
       <div className="table-centered your-board">
-         <h2 className="table-head-text">Ваше игровое поле</h2>
+         <h2 className="table-head-text">Ваше игровое поле — чистая зона</h2>
          <table className="table-ship">
             <tbody>{rows}</tbody>
          </table>

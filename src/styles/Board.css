@@ -1,9 +1,9 @@
 /* Table */
 .table-centered {
-   margin: 0px 40px;
+   margin: 0px 50px;
 }
 .table-head-text {
-   margin-bottom: 50px;
+   margin-bottom: 70px;
    margin-top: -50px;
    font-size: 21px;
    color: #2d48b3;
@@ -12,6 +12,8 @@
    position: relative;
    border-spacing: 0px;
    background: white;
+   border-radius: 5px;
+   scale: 1.1;
 }
 .disabled::after {
    position: absolute;

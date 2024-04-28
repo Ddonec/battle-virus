@@ -9,10 +9,13 @@ import GameBoard from "./components/GameBoard";
 import { CSSTransition } from "react-transition-group";
 import WelcomeHi from "./components/Game/WelcomeHello";
 import Rules from "./components/Game/Rules";
+import StartModal from "./components/Game/StartModal";
+import RulesLink from "./components/Setup/RulesLink";
 
 function App() {
    const size = useWindowSize();
    const scale = getScale(size);
+   const [showStartModal, setShowStartModal] = useState(true);
    const [showStart, setShowStart] = useState(true);
    const [showRules, setShowRules] = useState(false);
    const [difficulty, setDifficulty] = useState(0);
@@ -29,13 +32,16 @@ function App() {
       setShowStart(false);
       setShowRules(false);
    };
+   const closeBtnModal = () => {
+      console.log(12);
+      setShowStartModal(false);
+   };
+
    return (
       <>
          <div className="page-container no-select" style={{ transform: "translate(-50%, -50%) scale(" + scale + ")" }}>
             <div className="page-wrapper">
-               <div className="logo-container">
-                  {/* <h1 className="logo-text ">ПРОМОМЕD</h1> */}
-               </div>
+               <div className="logo-container">{/* <h1 className="logo-text ">ПРОМОМЕD</h1> */}</div>
                {board1.length === 10 ? (
                   <GameBoard {...{ board1, board2, setBoard1, setBoard2, difficulty }}></GameBoard>
                ) : (
@@ -44,6 +50,8 @@ function App() {
             </div>
             {showStart && <WelcomeHi clickCB={closeBtb} clickR={rulesBtn} />}
             {showRules && <Rules clickCB={closeBtb} />}
+            {showStartModal && <StartModal clickHide={closeBtnModal} />}
+            {board1.length === 10 ? "" : <RulesLink ClickRL={rulesBtn}></RulesLink>}
          </div>
       </>
    );
