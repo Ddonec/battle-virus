@@ -1,21 +1,25 @@
 {
   "files": {
-    "main.css": "/Sea-Battle/static/css/main.b080b35c.css",
-    "main.js": "/Sea-Battle/static/js/main.b8230536.js",
+    "main.css": "/Sea-Battle/static/css/main.e92618d5.css",
+    "main.js": "/Sea-Battle/static/js/main.649edced.js",
+    "static/media/bg-main-start-modal.jpeg": "/Sea-Battle/static/media/bg-main-start-modal.fe025a9c492351de8a51.jpeg",
+    "static/media/rules-bg-new.jpeg": "/Sea-Battle/static/media/rules-bg-new.2a2a61ddad21648bfd74.jpeg",
     "static/media/winner-hero-img.png": "/Sea-Battle/static/media/winner-hero-img.fe35082d3c4680b880b2.png",
-    "static/media/lose-hero-1.png": "/Sea-Battle/static/media/lose-hero-1.67f0010fe49eaddfadf8.png",
-    "static/media/lose-hero-3.png": "/Sea-Battle/static/media/lose-hero-3.c607fdde2febd25e8cec.png",
-    "static/media/lose-hero-2.png": "/Sea-Battle/static/media/lose-hero-2.40c7adc4a2437b773b18.png",
+    "static/media/lose-hero-1.png": "/Sea-Battle/static/media/lose-hero-1.05298077360e266aa75b.png",
+    "static/media/lose-hero-2.png": "/Sea-Battle/static/media/lose-hero-2.dfcc332e6c00298518e5.png",
+    "static/media/lose-hero-3.png": "/Sea-Battle/static/media/lose-hero-3.3d4b8140726c750c8834.png",
+    "static/media/hero-prepair.png": "/Sea-Battle/static/media/hero-prepair.8aab82ff837643eb7c49.png",
     "static/media/bg-wawes.png": "/Sea-Battle/static/media/bg-wawes.1582b0e2d6eaba21b85c.png",
-    "static/media/hero.png": "/Sea-Battle/static/media/hero.6dc211ae23e2844c8b23.png",
+    "static/media/logo-pm.png": "/Sea-Battle/static/media/logo-pm.cec6542d665b883a1d13.png",
     "static/media/hero-white-bg.png": "/Sea-Battle/static/media/hero-white-bg.bbb12635acef6c8a970d.png",
-    "static/media/b-v-4.png": "/Sea-Battle/static/media/b-v-4.13275d361dba32a9437e.png",
+    "static/media/bad-last-v4.png": "/Sea-Battle/static/media/bad-last-v4.13275d361dba32a9437e.png",
+    "static/media/bad-last-h4.png": "/Sea-Battle/static/media/bad-last-h4.863af72c5e7179744898.png",
     "index.html": "/Sea-Battle/index.html",
-    "main.b080b35c.css.map": "/Sea-Battle/static/css/main.b080b35c.css.map",
-    "main.b8230536.js.map": "/Sea-Battle/static/js/main.b8230536.js.map"
+    "main.e92618d5.css.map": "/Sea-Battle/static/css/main.e92618d5.css.map",
+    "main.649edced.js.map": "/Sea-Battle/static/js/main.649edced.js.map"
   },
   "entrypoints": [
-    "static/css/main.b080b35c.css",
-    "static/js/main.b8230536.js"
+    "static/css/main.e92618d5.css",
+    "static/js/main.649edced.js"
   ]
 }
