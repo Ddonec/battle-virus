@@ -101,7 +101,7 @@ body {
    height: 540px;
    display: flex;
    flex-direction: column;
-   margin-right: 36px;
+   margin-right: 26px;
 }
 .ship-select h4 {
    font-size: 21px;
@@ -133,7 +133,7 @@ body {
    flex-direction: column;
    width: 352px;
    align-items: center;
-   margin-left: 36px;
+   margin-left: 26px;
 }
 
 .difficulty-container > h4 {
