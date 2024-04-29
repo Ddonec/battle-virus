@@ -368,7 +368,8 @@ body {
    width: 100%;
    height: 100%;
    background-image: url(../img/bg-wawes.png);
-   background-size: cover;
+   background-size: 102%;
+   background-position: center;
    display: flex;
    align-items: center;
    justify-content: center;
