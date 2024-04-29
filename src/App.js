@@ -48,10 +48,10 @@ function App() {
                   <SetupBoard {...{ scale, setBoard1, difficulty, setDifficulty }}></SetupBoard>
                )}
             </div>
+            {board1.length === 10 ? "" : <RulesLink ClickRL={rulesBtn}></RulesLink>}
             {showStart && <WelcomeHi clickCB={closeBtb} clickR={rulesBtn} />}
             {showRules && <Rules clickCB={closeBtb} />}
             {showStartModal && <StartModal clickHide={closeBtnModal} />}
-            {board1.length === 10 ? "" : <RulesLink ClickRL={rulesBtn}></RulesLink>}
          </div>
       </>
    );

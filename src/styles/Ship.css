@@ -3,8 +3,8 @@
    top: 0;
    left: 0;
    z-index: 1;
-   border-right: 1px solid #b4b4ff;
-   border-bottom: 1px solid #b4b4ff;
+   /* border-right: 1px solid #b4b4ff;
+   border-bottom: 1px solid #b4b4ff; */
    cursor: pointer;
 }
 .ship-wrapper .ship {
