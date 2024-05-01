@@ -82,6 +82,9 @@ body {
    opacity: 0;
    transition: opacity 1000ms;
 }
+.text-caps {
+   text-transform: uppercase;
+}
 
 .shadowed {
    text-shadow: rgb(59, 59, 59) 3px 0px 0px, rgb(59, 59, 59) 2.83487px 0.981584px 0px, rgb(59, 59, 59) 2.35766px 1.85511px 0px, rgb(59, 59, 59) 1.62091px 2.52441px 0px,
@@ -303,6 +306,7 @@ body {
    font-size: 48px;
    letter-spacing: 6px;
    font-weight: 500;
+   gap: 10px;
 }
 .start-title {
    font-size: 106px;
@@ -312,7 +316,7 @@ body {
 .welcome-subtitle {
    margin: 10px;
    color: #fff;
-   font-size: 12.8px;
+   font-size: 14px;
    font-weight: 400;
 }
 .start-sub {
@@ -327,7 +331,7 @@ body {
    color: #000;
 }
 .instruction {
-   width: 531px;
+   /* width: 570px; */
 }
 .rules {
    width: 510px;
@@ -380,6 +384,29 @@ body {
    display: flex;
    align-items: center;
    justify-content: center;
+   position: relative;
+}
+.heri-hi-absolute {
+   position: absolute;
+   top: 130px;
+   left: -100px;
+   width: 552px;
+   height: 612px;
+   transform: scaleX(-1);
+   scale: 0.5;
+   background-image: url(../img/hero-hi.png);
+   background-size: cover;
+}
+.colb-absolute {
+   position: absolute;
+   top: 0;
+   right: 100px;
+   width: 100px;
+   height: 444px;
+   transform: scaleX(-1) rotate(6deg);
+   scale: 0.5;
+   background-image: url(../img/g-v-3.png);
+   background-size: cover;
 }
 .rules-bg-container {
    width: 100%;
@@ -416,7 +443,7 @@ body {
    gap: 20px;
 }
 .welocme-white-container {
-   padding: 40px;
+   padding: 30px;
    border-radius: 30px;
    background: #fff;
    align-items: center;
@@ -501,6 +528,19 @@ body {
    left: 50%;
    transform: translate(-50%, -50%);
 }
+.rules-update {
+   width: 600px;
+   height: fit-content;
+   margin-top: 35px;
+}
+.start-blure-bg {
+   width: 750px;
+   height: fit-content;
+   padding: 40px;
+   padding: 30px 5px;
+   border-radius: 30px;
+   margin-top: 35px;
+}
 @keyframes appearTransition {
    from {
       opacity: 0;
@@ -528,7 +568,7 @@ body {
    display: flex;
    align-items: center;
    justify-content: center;
-   font-size: 16px;
+   font-size: 19px;
 }
 .rule-btn {
    border-radius: 30px;
@@ -541,7 +581,7 @@ body {
    display: flex;
    align-items: center;
    justify-content: center;
-   font-size: 16px;
+   font-size: 19px;
 }
 .game-end-header {
    color: #2c42b6;
@@ -581,6 +621,26 @@ body {
    display: flex;
    flex-wrap: wrap;
    width: 100px;
+   background: #fcfcfc80;
+   border-radius: 10px;
+}
+
+.fill-bg-container {
+   width: 100vw;
+   height: 100dvh;
+   background-image: url(../img/rules-bg-new.jpeg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.logo-l-cont {
+   width: 100%;
+   height: 10dvh;
+   background: #fff;
+   background-image: url(../img/logo-pm.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
 }
 .shipList-container > div:first-child {
    display: flex;
@@ -659,7 +719,7 @@ body {
    vertical-align: middle;
 }
 .rules-1-b {
-   margin: 5px 0 20px;
+   margin: 5px 0 10px;
 }
 .none {
    display: none;
