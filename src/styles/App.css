@@ -243,7 +243,7 @@ body {
    display: flex;
    gap: 40px;
    align-items: center;
-   padding: 70px 95px 70px 35px;
+   padding: 40px 95px 40px 35px;
 }
 .hero-img {
    width: 240px;
@@ -263,7 +263,7 @@ body {
    background-position: center;
    background-size: cover;
    width: 330px;
-   height: 420px;
+   height: 346px;
 }
 .hero-loser-3 {
    background-image: url(../img/lose-hero-3.png);
@@ -490,7 +490,7 @@ body {
    background-image: url(../img/logo-white.png);
    background-size: contain;
    position: absolute;
-   top: 35px;
+   top: 22px;
    background-repeat: no-repeat;
 }
 .go-next-btn {
@@ -598,6 +598,8 @@ body {
    flex-direction: column;
    align-items: center;
    justify-content: center;
+   font-weight: 600;
+   margin-bottom: 10px;
 }
 .winner-subtitle {
    color: #414141;
@@ -612,7 +614,7 @@ body {
    font-size: 29px;
 }
 .game-end-header > p {
-   font-size: 0.6em;
+   font-size: 0.7em;
    font-weight: 400;
    text-align: left;
 }
