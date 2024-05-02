@@ -313,7 +313,7 @@ body {
 }
 .start-title {
    font-size: 106px;
-   font-weight: 400;
+   font-weight: 500;
 }
 
 .welcome-subtitle {
@@ -335,6 +335,7 @@ body {
 }
 .instruction {
    /* width: 570px; */
+   line-height: 1.6;
 }
 .rules {
    width: 510px;
@@ -592,8 +593,8 @@ body {
 .rule-btn {
    border-radius: 30px;
    background: #fff;
-   border: 3px solid #1977d0;
-   color: #1977d0;
+   border: 3px solid #18309c;
+   color: #18309c;
    width: 200px;
    height: 40px;
    /* padding: 10px 30px; */
@@ -727,7 +728,9 @@ body {
    width: 151px;
    height: 40px;
 }
-
+.start-second-box {
+   padding: 10px;
+}
 .logo-text {
    margin: 0;
    font-family: Tahoma, sans-serif;
