@@ -243,7 +243,7 @@ body {
    display: flex;
    gap: 40px;
    align-items: center;
-   padding: 30px;
+   padding: 40px 95px 40px 35px;
 }
 .hero-img {
    width: 240px;
@@ -263,7 +263,7 @@ body {
    background-position: center;
    background-size: cover;
    width: 330px;
-   height: 420px;
+   height: 346px;
 }
 .hero-loser-3 {
    background-image: url(../img/lose-hero-3.png);
@@ -276,7 +276,7 @@ body {
    background-image: url(../img/winner-hero-img.png);
    background-position: center;
    background-size: cover;
-   width: 378px;
+   width: 380px;
    height: 330px;
 }
 .border-w-div {
@@ -304,13 +304,16 @@ body {
    color: #fff;
    margin: 0;
    font-size: 48px;
-   letter-spacing: 6px;
+   /* letter-spacing: 6px; */
    font-weight: 500;
    gap: 10px;
 }
+.welcome-title.blue-text {
+   text-transform: uppercase;
+}
 .start-title {
    font-size: 106px;
-   font-weight: 400;
+   font-weight: 500;
 }
 
 .welcome-subtitle {
@@ -332,14 +335,20 @@ body {
 }
 .instruction {
    /* width: 570px; */
+   line-height: 1.6;
 }
 .rules {
    width: 510px;
    text-align: start;
    margin: 0;
+   line-height: 1.6;
 }
 .rules > p {
    display: flex;
+   margin: 10px 0;
+}
+.rules-btn {
+   margin-top: 10px;
 }
 .rules-and-help {
    position: absolute;
@@ -444,17 +453,19 @@ body {
 }
 .welocme-white-container {
    padding: 30px;
-   border-radius: 30px;
+   /* border-radius: 30px; */
    background: #fff;
    align-items: center;
    text-align: center;
    display: flex;
    flex-direction: column;
-   width: 755px;
+   /* width: 755px; */
+   padding-top: 15px;
+   margin-top: 20px;
 }
-.rules-white {
+/* .rules-white {
    width: 590px;
-}
+} */
 .lets-ready {
    color: #172f99;
    font-size: 18px;
@@ -490,7 +501,7 @@ body {
    background-image: url(../img/logo-white.png);
    background-size: contain;
    position: absolute;
-   top: 35px;
+   top: 22px;
    background-repeat: no-repeat;
 }
 .go-next-btn {
@@ -510,7 +521,7 @@ body {
    background: #fff;
    /* min-width: 400px;
    min-height: 200px; */
-   width: 1280px;
+   /* width: 1280px; */
    height: 720px;
    font-size: 40px;
    /* padding: 10px 30px; */
@@ -528,10 +539,16 @@ body {
    left: 50%;
    transform: translate(-50%, -50%);
 }
+.start-modal {
+   width: 1280px;
+}
 .rules-update {
-   width: 600px;
+   /* width: 600px; */
    height: fit-content;
-   margin-top: 35px;
+   margin-top: 10px;
+   margin-top: 40px;
+   padding: 5px 55px;
+   border-radius: 30px;
 }
 .start-blure-bg {
    width: 750px;
@@ -570,11 +587,14 @@ body {
    justify-content: center;
    font-size: 19px;
 }
+.rules-close-btn {
+   background: #e83459;
+}
 .rule-btn {
    border-radius: 30px;
    background: #fff;
-   border: 3px solid #1977d0;
-   color: #1977d0;
+   border: 3px solid #18309c;
+   color: #18309c;
    width: 200px;
    height: 40px;
    /* padding: 10px 30px; */
@@ -585,23 +605,25 @@ body {
 }
 .game-end-header {
    color: #2c42b6;
-   width: 670px;
+   width: 450px;
    text-align: left;
    margin: 0 auto;
    background-image: url(../img/bg-dialog.png);
    padding: 20px;
    background-size: cover;
-   height: 304px;
-   font-size: 32px;
+   height: 203px;
+   font-size: 22px;
    text-align: center;
-   scale: 0.7;
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
+   font-weight: 600;
+   margin-bottom: 10px;
 }
 .winner-subtitle {
-   color: #000;
+   color: #414141;
+   text-align: center;
 }
 .game-end-container > h5 {
    color: white;
@@ -612,9 +634,13 @@ body {
    font-size: 29px;
 }
 .game-end-header > p {
-   font-size: 0.6em;
+   font-size: 0.7em;
    font-weight: 400;
    text-align: left;
+}
+.game-end-header > .winner-subtitle {
+   text-align: center;
+   line-height: 1.33333;
 }
 .shipList-container {
    position: absolute;
@@ -702,7 +728,9 @@ body {
    width: 151px;
    height: 40px;
 }
-
+.start-second-box {
+   padding: 10px;
+}
 .logo-text {
    margin: 0;
    font-family: Tahoma, sans-serif;
@@ -719,7 +747,7 @@ body {
    vertical-align: middle;
 }
 .rules-1-b {
-   margin: 5px 0 10px;
+   margin: 0 0 10px;
 }
 .none {
    display: none;

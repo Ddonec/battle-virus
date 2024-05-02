@@ -5,7 +5,7 @@ function ModifyBoard({ randomiseBoard, resetBoard, emptyBoard }) {
       <div className="board-modify">
          {emptyBoard ? (
             <div onClick={() => randomiseBoard()} className="modify-text">
-               Расставить
+               Случайная расстановка
             </div>
          ) : (
             <div onClick={() => resetBoard()} className="modify-text">
