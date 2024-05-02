@@ -304,9 +304,12 @@ body {
    color: #fff;
    margin: 0;
    font-size: 48px;
-   letter-spacing: 6px;
+   /* letter-spacing: 6px; */
    font-weight: 500;
    gap: 10px;
+}
+.welcome-title.blue-text {
+   text-transform: uppercase;
 }
 .start-title {
    font-size: 106px;
@@ -337,9 +340,14 @@ body {
    width: 510px;
    text-align: start;
    margin: 0;
+   line-height: 1.6;
 }
 .rules > p {
    display: flex;
+   margin: 10px 0;
+}
+.rules-btn {
+   margin-top: 10px;
 }
 .rules-and-help {
    position: absolute;
@@ -444,17 +452,19 @@ body {
 }
 .welocme-white-container {
    padding: 30px;
-   border-radius: 30px;
+   /* border-radius: 30px; */
    background: #fff;
    align-items: center;
    text-align: center;
    display: flex;
    flex-direction: column;
-   width: 755px;
+   /* width: 755px; */
+   padding-top: 15px;
+   margin-top: 20px;
 }
-.rules-white {
+/* .rules-white {
    width: 590px;
-}
+} */
 .lets-ready {
    color: #172f99;
    font-size: 18px;
@@ -510,7 +520,7 @@ body {
    background: #fff;
    /* min-width: 400px;
    min-height: 200px; */
-   width: 1280px;
+   /* width: 1280px; */
    height: 720px;
    font-size: 40px;
    /* padding: 10px 30px; */
@@ -528,10 +538,16 @@ body {
    left: 50%;
    transform: translate(-50%, -50%);
 }
+.start-modal {
+   width: 1280px;
+}
 .rules-update {
-   width: 600px;
+   /* width: 600px; */
    height: fit-content;
-   margin-top: 35px;
+   margin-top: 10px;
+   margin-top: 40px;
+   padding: 5px 55px;
+   border-radius: 30px;
 }
 .start-blure-bg {
    width: 750px;
@@ -569,6 +585,9 @@ body {
    align-items: center;
    justify-content: center;
    font-size: 19px;
+}
+.rules-close-btn {
+   background: #e83459;
 }
 .rule-btn {
    border-radius: 30px;
@@ -725,7 +744,7 @@ body {
    vertical-align: middle;
 }
 .rules-1-b {
-   margin: 5px 0 10px;
+   margin: 0 0 10px;
 }
 .none {
    display: none;

@@ -43,7 +43,7 @@ function GameEnd({ setBoard1, setBoard2 }) {
                                     Все инфекции найдены и обезврежены! <br />
                                     Мы гордимся, что Вы часть нашей команды!
                                  </p>
-                              </> 
+                              </>    
                            )}
                         </h3>
                         <div onClick={resetGame} className="go-next-btn">

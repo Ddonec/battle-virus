@@ -3,7 +3,7 @@ import React from "react";
 function StartModal({ clickHide }) {
    return (
       <>
-         <div className="game-start-container">
+         <div className="game-start-container start-modal">
             <div className="logo"></div>
             <div className="blue-container start-blue">
                <div className="justify-left">

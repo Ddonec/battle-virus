@@ -20,7 +20,7 @@ export function getRandomFromArray(array) {
    return array[randomIndex];
 }
 export function getRandomNumber() {
-   return Math.floor(Math.random() * 3); // Генерирует случайное число от 0 до 2
+   return Math.floor(Math.random() * 3);
 }
 export function map(value, start1, stop1, start2, stop2) {
    return ((value - start1) / (stop1 - start1)) * (stop2 - start2) + start2;
