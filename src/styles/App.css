@@ -243,7 +243,7 @@ body {
    display: flex;
    gap: 40px;
    align-items: center;
-   padding: 30px;
+   padding: 70px 95px 70px 35px;
 }
 .hero-img {
    width: 240px;
@@ -276,7 +276,7 @@ body {
    background-image: url(../img/winner-hero-img.png);
    background-position: center;
    background-size: cover;
-   width: 378px;
+   width: 380px;
    height: 330px;
 }
 .border-w-div {
@@ -585,23 +585,23 @@ body {
 }
 .game-end-header {
    color: #2c42b6;
-   width: 670px;
+   width: 450px;
    text-align: left;
    margin: 0 auto;
    background-image: url(../img/bg-dialog.png);
    padding: 20px;
    background-size: cover;
-   height: 304px;
-   font-size: 32px;
+   height: 203px;
+   font-size: 22px;
    text-align: center;
-   scale: 0.7;
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
 }
 .winner-subtitle {
-   color: #000;
+   color: #414141;
+   text-align: center;
 }
 .game-end-container > h5 {
    color: white;
@@ -615,6 +615,10 @@ body {
    font-size: 0.6em;
    font-weight: 400;
    text-align: left;
+}
+.game-end-header > .winner-subtitle {
+   text-align: center;
+   line-height: 1.33333;
 }
 .shipList-container {
    position: absolute;
