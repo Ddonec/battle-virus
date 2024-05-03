@@ -23,7 +23,15 @@
    top: 0px;
    left: 0px;
    z-index: 10;
-   content: "";
+   content: "ход соперника";
+   color: #e7345891;
+   font-family: "Montserrat", sans-serif;
+   font-size: 40px;
+   font-weight: 600;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-transform: uppercase;
 }
 
 /* Table cells */
