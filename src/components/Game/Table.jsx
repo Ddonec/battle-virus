@@ -60,7 +60,7 @@ function Table({ type, board, classNames }) {
       setTimeout(() => {
          const move = getMove();
          if (move !== null) setCell(move);
-      }, 500);
+      }, 2000);
    }
    if (type === 0 && turn && winner === null) updateCell();
 
