@@ -463,13 +463,16 @@ body {
    padding-top: 15px;
    margin-top: 20px;
 }
-/* .rules-white {
-   width: 590px;
-} */
+.rules-white {
+   margin: 0;
+}
 .lets-ready {
    color: #172f99;
    font-size: 18px;
    font-weight: 500;
+}
+.get-luck {
+   margin: 10px 0;
 }
 .game-end-container {
    position: absolute;
@@ -546,8 +549,8 @@ body {
    /* width: 600px; */
    height: fit-content;
    margin-top: 10px;
-   margin-top: 40px;
-   padding: 5px 55px;
+   margin-top: 37px;
+   padding: 5px 55px 0;
    border-radius: 30px;
 }
 .start-blure-bg {
