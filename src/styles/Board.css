@@ -1,6 +1,7 @@
 /* Table */
 .table-centered {
    margin: 0px 50px;
+   position: relative;
 }
 .table-head-text {
    margin-bottom: 70px;

@@ -11,8 +11,8 @@
    border: none;
 }
 .ship-destroyed {
-   background: rgba(255, 122, 122, 0.1);
-   border: 3px solid #ff7a7a;
+   /* background: rgba(255, 122, 122, 0.1); */
+   /* border: 3px solid #ff7a7a; */
    pointer-events: none;
 }
 .failed {

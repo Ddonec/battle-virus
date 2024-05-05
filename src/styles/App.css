@@ -675,11 +675,11 @@ body {
 }
 .align-left {
    top: 28px;
-   left: 35px;
+   left: -175px;
 }
 .align-right {
    top: 28px;
-   right: 25px;
+   right: -175px;
 }
 
 .list-holder {
@@ -748,6 +748,21 @@ body {
 }
 .rules-1-b {
    margin: 0 0 10px;
+}
+.way-walue {
+   font-size: 30px;
+   bottom: -100px;
+   left: 50%;
+   transform: translateX(-50%);
+   position: absolute;
+   display: flex;
+   width: 300px;
+   border: 3px solid red;
+   justify-content: center;
+   align-items: center;
+}
+.way-walue.active {
+   opacity: 0.4;
 }
 .none {
    display: none;

@@ -16,7 +16,7 @@ function GameEnd({ setBoard1, setBoard2 }) {
       setBoard2(generateBoard());
    }
    let i = getRandomNumber();
-   console.log(i);
+   // console.log(i);
    return (
       <>
          {winner !== null && (
