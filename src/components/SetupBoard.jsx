@@ -19,6 +19,7 @@ function SetupBoard({ scale, setBoard1, difficulty, setDifficulty }) {
    const [isFailed, setIsFailed] = useState(false);
 
    useEffect(() => {
+      let boardElem;
       function mousemove(event) {
          if (current.target === null) return;
          const { clientX, clientY } = (event.touches && event.touches[0]) || event;
@@ -26,6 +27,18 @@ function SetupBoard({ scale, setBoard1, difficulty, setDifficulty }) {
          const y = (clientY - current.y) / scale;
          current.target.classList.add("no-events");
          current.target.style.transform = `translate(${x}px, ${y}px)`;
+      }
+
+      function onMove(event) {
+         const { clientX, clientY } = (event.touches && event.touches[0]) || event;
+         boardElem = boardElem || document.querySelector(".table-ship");
+         console.log(boardElem.offsetLeft, boardElem.offsetTop);
+         const { left, top, width, height } = boardElem.getBoundingClientRect();
+         const x = Math.trunc((clientX - left) / (width / 10));
+         const y = Math.trunc((clientY - top) / (height / 10));
+         setCell(x - current.mapX, y - current.mapY);
+         mousemove(event);
+         return true;
       }
 
       function mouseup() {
@@ -60,13 +73,15 @@ function SetupBoard({ scale, setBoard1, difficulty, setDifficulty }) {
       window.addEventListener("mousemove", mousemove);
       window.addEventListener("mouseup", mouseup);
 
-      window.addEventListener("touchmove", mousemove);
+      window.addEventListener("touchmove", onMove);
+      // window.addEventListener("touchmove", mousemove);
       window.addEventListener("touchend", mouseup);
       return () => {
          window.removeEventListener("mousemove", mousemove);
          window.removeEventListener("mouseup", mouseup);
 
-         window.removeEventListener("touchmove", mousemove);
+         window.removeEventListener("touchmove", onMove);
+         // window.removeEventListener("touchmove", mousemove);
          window.removeEventListener("touchend", mouseup);
       };
    }, [current, overlapCells]);
@@ -117,28 +132,6 @@ function SetupBoard({ scale, setBoard1, difficulty, setDifficulty }) {
 
       setCurrent({ target: event.target, x: posx, y: posy, ship, mapX, mapY });
    }
-
-   /* Touch start for drag */
-   // function touchstart(event, ship) {
-   //    const touch = event.touches[0];
-   //    const bounds = event.target.getBoundingClientRect();
-
-   //    // Get index of the cell that cursor is pointing to [x, y]
-   //    const offsetX = touch.clientX - bounds.left;
-   //    const offsetY = touch.clientY - bounds.top;
-   //    let mapX = Math.floor(map(offsetX * scale, 0, bounds.width, 0, ship.w + 1));
-   //    let mapY = Math.floor(map(offsetY * scale, 0, bounds.height, 0, ship.h + 1));
-   //    mapX = clamp(mapX, 0, Infinity);
-   //    mapY = clamp(mapY, 0, Infinity);
-
-   //    // Align ship to the cursor
-   //    const width = (40 * (mapX + 1) - 20) * scale;
-   //    const height = (40 * (mapY + 1) - 20) * scale;
-   //    const posx = bounds.left + width;
-   //    const posy = bounds.top + height;
-
-   //    setCurrent({ target: event.target, x: posx, y: posy, ship, mapX, mapY });
-   // }
 
    /* Rotate ship */
    function rotate(event, ship) {
