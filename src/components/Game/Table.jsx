@@ -26,7 +26,7 @@ function Table({ type, board, classNames }) {
    function setCell([hoverX, hoverY]) {
       const touched = touchedShip(board, [hoverX, hoverY]);
       // type === 1 && turn && winner === null ? setActive(true) : setActive(false);
-      // console.log(type);
+      // console.log(type, turn, winner, "table");
 
       if (touched) {
          const wreckedShip = getWreckedShip(board, [hoverX, hoverY]);
@@ -116,8 +116,9 @@ function Table({ type, board, classNames }) {
 
    const tableNames = ["table-ship"];
    if (type === 1 && turn && winner === null) tableNames.push("disabled");
-   const wayWalue = <div className={`way-walue`}>{type === 1 ? "ваш ход" : "ход соперника"}</div>;
    classList.push(type === 1 ? "opponent-board" : "your-board");
+
+
    return (
       <div className={classList.join(" ")}>
          <h2 className="table-head-text">{(type ? "Инфицированная" : "Чистая") + " зона"}</h2>
@@ -125,7 +126,6 @@ function Table({ type, board, classNames }) {
             <tbody>{rows}</tbody>
          </table>
          <ShipList {...{ type, shipList }} />
-         {wayWalue}
       </div>
    );
 }

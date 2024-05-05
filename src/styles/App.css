@@ -749,7 +749,8 @@ body {
 .rules-1-b {
    margin: 0 0 10px;
 }
-.way-walue {
+.way-walue,
+.way-walue2 {
    font-size: 30px;
    bottom: -100px;
    left: 50%;
@@ -761,7 +762,8 @@ body {
    justify-content: center;
    align-items: center;
 }
-.way-walue.active {
+.way-walue.active,
+.way-walue2.active {
    opacity: 0.4;
 }
 .none {
