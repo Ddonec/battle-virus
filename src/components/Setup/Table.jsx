@@ -27,7 +27,7 @@ function TableShip() {
 
          const ship = board.length && board.find(({ x, y }) => x === cell && row === y);
          if (ship) {
-            const elem = <Ship key={2} shipPosition={ship} onMouseDown={(event) => dragStart(event, ship)} onClick={(event) => rotate(event, ship)} />;
+            const elem = <Ship key={2} shipPosition={ship} onMouseDown={(event) => dragStart(event, ship)} onTouchStart={(event) => dragStart(event, ship)} onClick={(event) => rotate(event, ship)} />;
             markers.push(elem);
          }
 
