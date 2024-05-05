@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Sea-Battle/static/css/main.eccc84f7.css",
-    "main.js": "/Sea-Battle/static/js/main.be1708aa.js",
+    "main.css": "/Sea-Battle/static/css/main.8ebbc0f9.css",
+    "main.js": "/Sea-Battle/static/js/main.749532d0.js",
     "static/media/hero-hi.png": "/Sea-Battle/static/media/hero-hi.361d21008c3fa4540d82.png",
     "static/media/bg-main-start-modal.jpeg": "/Sea-Battle/static/media/bg-main-start-modal.fe025a9c492351de8a51.jpeg",
     "static/media/rules-bg-new.jpeg": "/Sea-Battle/static/media/rules-bg-new.2a2a61ddad21648bfd74.jpeg",
@@ -16,11 +16,11 @@
     "static/media/bad-last-v4.png": "/Sea-Battle/static/media/bad-last-v4.13275d361dba32a9437e.png",
     "static/media/bad-last-h4.png": "/Sea-Battle/static/media/bad-last-h4.863af72c5e7179744898.png",
     "index.html": "/Sea-Battle/index.html",
-    "main.eccc84f7.css.map": "/Sea-Battle/static/css/main.eccc84f7.css.map",
-    "main.be1708aa.js.map": "/Sea-Battle/static/js/main.be1708aa.js.map"
+    "main.8ebbc0f9.css.map": "/Sea-Battle/static/css/main.8ebbc0f9.css.map",
+    "main.749532d0.js.map": "/Sea-Battle/static/js/main.749532d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.eccc84f7.css",
-    "static/js/main.be1708aa.js"
+    "static/css/main.8ebbc0f9.css",
+    "static/js/main.749532d0.js"
   ]
 }
