@@ -24,7 +24,8 @@
    top: 0px;
    left: 0px;
    z-index: 10;
-   content: "ход соперника";
+   /* content: "ход соперника"; */
+   content: "";
    color: #2d48b3;
    font-family: "Montserrat", sans-serif;
    font-size: 40px;

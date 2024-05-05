@@ -749,12 +749,15 @@ body {
 .rules-1-b {
    margin: 0 0 10px;
 }
-.way-walue,
-.way-walue2 {
+.ml-15 {
+   margin-left: 15px;
+}
+.way-walue-left,
+.way-walue-right {
    font-size: 30px;
    bottom: -100px;
    left: 50%;
-   transform: translateX(-50%);
+   /* transform: translateX(-50%); */
    position: absolute;
    display: flex;
    width: 300px;
@@ -762,9 +765,15 @@ body {
    justify-content: center;
    align-items: center;
 }
-.way-walue.active,
-.way-walue2.active {
-   opacity: 0.4;
+.way-walue-left {
+   transform: translateX(-135%);
+}
+.way-walue-right {
+   transform: translateX(35%);
+}
+.way-walue-left.active,
+.way-walue-right.active {
+   opacity: 0.3;
 }
 .none {
    display: none;
