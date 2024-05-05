@@ -73,6 +73,7 @@ function SetupBoard({ scale, setBoard1, difficulty, setDifficulty }) {
 
    /* Push cells where ship will be placed */
    function setCell(hoverX, hoverY) {
+      console.log(hoverX, hoverY);
       if (current.target === null) return;
       const { w, h } = current.ship;
       const hoverPosition = [hoverX, hoverY, w, h];
@@ -89,10 +90,16 @@ function SetupBoard({ scale, setBoard1, difficulty, setDifficulty }) {
    function dragStart(event, ship) {
       const { w, h } = ship;
       const bounds = event.target.getBoundingClientRect();
-
-      // Get index of the cell that cursor is pointing to [x, y]
-      const offsetX = event.nativeEvent.offsetX || 0;
-      const offsetY = event.nativeEvent.offsetY || 0;
+      let offsetX, offsetY;
+      if (event.type === "touchstart") {
+         const touch = (event.touches && event.touches[0]) || {};
+         offsetX = touch.clientX - bounds.left;
+         offsetY = touch.clientY - bounds.top;
+      } else {
+         // Get index of the cell that cursor is pointing to [x, y]
+         offsetX = event.nativeEvent.offsetX || 0;
+         offsetY = event.nativeEvent.offsetY || 0;
+      }
       let mapX = Math.floor(map(offsetX * scale, 0, bounds.width, 0, w + 1));
       let mapY = Math.floor(map(offsetY * scale, 0, bounds.height, 0, h + 1));
       mapX = clamp(mapX, 0, Infinity);
@@ -106,10 +113,32 @@ function SetupBoard({ scale, setBoard1, difficulty, setDifficulty }) {
 
       // Do not align ship to the cursor position
       /* const posx = event.clientX;
-        const posy = event.clientY; */
+         const posy = event.clientY; */
 
       setCurrent({ target: event.target, x: posx, y: posy, ship, mapX, mapY });
    }
+
+   /* Touch start for drag */
+   // function touchstart(event, ship) {
+   //    const touch = event.touches[0];
+   //    const bounds = event.target.getBoundingClientRect();
+
+   //    // Get index of the cell that cursor is pointing to [x, y]
+   //    const offsetX = touch.clientX - bounds.left;
+   //    const offsetY = touch.clientY - bounds.top;
+   //    let mapX = Math.floor(map(offsetX * scale, 0, bounds.width, 0, ship.w + 1));
+   //    let mapY = Math.floor(map(offsetY * scale, 0, bounds.height, 0, ship.h + 1));
+   //    mapX = clamp(mapX, 0, Infinity);
+   //    mapY = clamp(mapY, 0, Infinity);
+
+   //    // Align ship to the cursor
+   //    const width = (40 * (mapX + 1) - 20) * scale;
+   //    const height = (40 * (mapY + 1) - 20) * scale;
+   //    const posx = bounds.left + width;
+   //    const posy = bounds.top + height;
+
+   //    setCurrent({ target: event.target, x: posx, y: posy, ship, mapX, mapY });
+   // }
 
    /* Rotate ship */
    function rotate(event, ship) {
