@@ -664,7 +664,7 @@ body {
 
 .fill-bg-container {
    width: 100vw;
-   height: 100dvh;
+   height: 100vh;
    background-image: url(../img/rules-bg-new.jpeg);
    background-position: center;
    background-size: cover;
@@ -672,7 +672,7 @@ body {
 }
 .logo-l-cont {
    width: 100%;
-   height: 10dvh;
+   height: 10vh;
    background: #fff;
    background-image: url(../img/logo-pm.png);
    background-repeat: no-repeat;
