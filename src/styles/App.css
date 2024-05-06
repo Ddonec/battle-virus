@@ -545,6 +545,10 @@ body {
 .start-modal {
    width: 1280px;
 }
+.first-modal-text-line {
+   width: 550px;
+   text-align: left;
+}
 .rules-update {
    /* width: 600px; */
    height: fit-content;
@@ -753,7 +757,7 @@ body {
    margin: 0 0 10px;
 }
 .ml-15 {
-   margin-left: 15px;
+   margin-left: 0;
 }
 .way-walue-left,
 .way-walue-right {
