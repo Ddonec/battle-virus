@@ -19,11 +19,9 @@
 }
 
 .default-button:hover {
-   background: #b6b6ff;
+   background: #f02951;
 }
 .default-button:active {
-   background: #a5a9e8;
-   box-shadow: inset 0 6px 0 #9a9ae3;
    padding-top: 18px;
    padding-bottom: 12px;
 }

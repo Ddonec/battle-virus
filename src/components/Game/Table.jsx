@@ -116,8 +116,8 @@ function Table({ type, board, classNames }) {
 
    const tableNames = ["table-ship"];
    if (type === 1 && turn && winner === null) tableNames.push("disabled");
+   if (type === 0 && !turn && winner === null) tableNames.push("disabled");
    classList.push(type === 1 ? "opponent-board" : "your-board");
-
 
    return (
       <div className={classList.join(" ")}>
