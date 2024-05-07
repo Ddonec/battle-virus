@@ -354,17 +354,23 @@ body {
    display: flex;
    margin: 10px 0;
 }
+.rules > p .number-list {
+   margin-right: 15px;
+}
 .rules-btn {
    margin-top: 10px;
 }
 .rules-and-help {
    position: absolute;
-   bottom: 15px;
-   left: 40px;
+   bottom: 50%;
+   transform: translateY(50%);
    display: flex;
    font-size: 19px;
    color: #2d48b3;
    font-weight: 500;
+   width: 100%;
+   padding: 0 93px 0 130px;
+   justify-content: space-between;
 }
 .rules-modal-link {
    opacity: 1;
@@ -383,6 +389,7 @@ body {
    font-size: 19px;
    align-items: center;
    gap: 10px;
+   font-weight: 600;
    cursor: pointer;
 }
 .ruler-s-p p:last-child {
@@ -400,7 +407,9 @@ body {
    font-size: 13px;
    color: #000;
    font-weight: 400;
-   margin-left: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 .welcome-bg-container {
    width: 100%;
@@ -464,7 +473,6 @@ body {
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-right: 15px;
 }
 .rules-title {
    color: #fff;
@@ -826,6 +834,12 @@ body {
    background: #ffffff80;
    position: absolute;
    bottom: -112px;
+}
+.under-40 .rules-modal-link {
+   padding: 0 40px;
+}
+.line-main {
+   bottom: 22px;
 }
 button {
    cursor: pointer;
