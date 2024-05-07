@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
+import HelpLink from "./ HelpLink";
 
-function RulesLink({ ClickRL }) {
+function RulesLink({ ClickRL, clickHL }) {
    const [textIndex, setTextIndex] = useState(0);
    const texts = [
       "Между объектами на поле должна быть минимум одна пустая клетка.",
       "Можно размещать объекты вплотную к границам игрового поля.",
       "Уничтоженный арсенал отображается сбоку от зоны каждого игрока.",
-      "Объект можно повернуть на 90 градусов, нажав на него мышкой (или пальцем при игре с телефона).",
+      "Объект можно повернуть на 90°, нажав на него мышкой (или пальцем при игре с телефона)",
    ];
 
    useEffect(() => {
@@ -24,10 +25,12 @@ function RulesLink({ ClickRL }) {
                <p>Правила</p>
                <p className="info-rect">i</p>
             </div>
-            <div className="help-info-box">
-               <div className="help-info__title">Подсказки:</div>
-               <div className="help-info__subtitle">{texts[textIndex]}</div>
-            </div>
+            {/* <div className="help-info-box"> */}
+            {/* <div className="help-info__title">Подсказки:</div> */}
+            <div className="help-info__subtitle">{texts[textIndex]}</div>
+            {/* </div> */}
+
+            <HelpLink ClickHLM={clickHL}></HelpLink>
          </div>
       </>
    );

@@ -12,6 +12,7 @@ import Rules from "./components/Game/Rules";
 import Help from "./components/Game/Help";
 import StartModal from "./components/Game/StartModal";
 import RulesLink from "./components/Setup/RulesLink";
+import RulesLinkModal from "./components/Setup/RulesLinkModal";
 import HelpLink from "./components/Setup/ HelpLink";
 import FIllBG from "./components/FIllBG";
 
@@ -70,11 +71,12 @@ function App() {
             )}
             {showContainer &&
                (board1.length === 10 ? (
-                  ""
+                  // <RulesLinkModal ClickRLM={rulesBtn} ClickHLM={helpBtn}></RulesLinkModal>
+                  ''
                ) : (
-                  <RulesLink ClickRL={rulesBtn}>
-                     <HelpLink ClickRL={helpBtn}></HelpLink>
-                  </RulesLink>
+                  <div className="under-line-op line-main">
+                     <RulesLink ClickRL={rulesBtn} clickHL={helpBtn}></RulesLink>
+                  </div>
                ))}
             {showRules && <Rules clickCB={closeBtb} />}
             {showHelp && <Help clickHB={closeBtb} />}

@@ -1,6 +1,7 @@
 import React from "react";
+import HelpLink from "./ HelpLink";
 
-function RulesLink({ ClickRLM }) {
+function RulesLinkModal({ ClickRLM , ClickHLM }) {
 
    return (
       <>
@@ -9,9 +10,11 @@ function RulesLink({ ClickRLM }) {
                <p>Правила</p>
                <p className="info-rect">i</p>
             </div>
+            <HelpLink ClickHLM={ClickHLM}></HelpLink>
+
          </div>
       </>
    );
 }
 
-export default RulesLink;
+export default RulesLinkModal;
