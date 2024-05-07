@@ -16,7 +16,7 @@ function GameEnd({ setBoard1, setBoard2 }) {
       setBoard2(generateBoard());
    }
    let i = getRandomNumber();
-   console.log(i);
+   // console.log(i);
    return (
       <>
          {winner !== null && (
@@ -40,10 +40,10 @@ function GameEnd({ setBoard1, setBoard2 }) {
                               <>
                                  Поздравляем, <br /> Ваша миссия выполнена!
                                  <p className="winner-subtitle">
-                                    Все инфекции найдены и обезврежены! <br />
-                                    Мы гордимся, что Вы часть нашей команды!
+                                    Все болезнетворные агенты найдены <br /> и обезврежены! Мы гордимся,
+                                    <br /> что Вы часть нашей команды!
                                  </p>
-                              </>    
+                              </>
                            )}
                         </h3>
                         <div onClick={resetGame} className="go-next-btn">

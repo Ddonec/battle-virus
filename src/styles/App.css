@@ -1,3 +1,8 @@
+@font-face {
+   font-family: "Montserrat";
+   src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+}
+
 * {
    box-sizing: border-box;
    font-family: "Montserrat", sans-serif;
@@ -12,7 +17,8 @@ body {
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
-   height: 100dvh;
+   height: 100vh;
+   /* width: 100dvw; */
 }
 
 .page-container {
@@ -183,7 +189,7 @@ body {
 .difficulty-logo {
    width: 255px;
    height: 300px;
-   background-image: url(../img/hero-prepair.png);
+   background-image: url(../img/hero-repair.png);
    background-size: cover;
    margin: auto;
    /* transform: scaleX(-1); */
@@ -234,7 +240,7 @@ body {
    width: 100%;
    height: 100%;
    border-radius: 20px 20px 0 0;
-   background-image: url(../img/bg-main-start-modal.jpeg);
+   background-image: url(../img/bg-main-start-modal-v2.png);
    background-position: center;
    background-size: cover;
    justify-content: end;
@@ -297,13 +303,13 @@ body {
    align-items: flex-start;
    display: flex;
    flex-direction: column;
-   width: 50%;
+   width: 57%;
    align-items: center;
 }
 .welcome-title {
    color: #fff;
    margin: 0;
-   font-size: 48px;
+   font-size: 40px;
    /* letter-spacing: 6px; */
    font-weight: 500;
    gap: 10px;
@@ -343,6 +349,7 @@ body {
    margin: 0;
    line-height: 1.6;
 }
+
 .rules > p {
    display: flex;
    margin: 10px 0;
@@ -359,11 +366,24 @@ body {
    color: #2d48b3;
    font-weight: 500;
 }
+.rules-modal-link {
+   opacity: 1;
+   bottom: 50%;
+   transform: translateY(50%);
+}
+.help-modal-link {
+   right: 25px;
+   left: unset;
+   opacity: 1;
+   bottom: 50%;
+   transform: translateY(50%);
+}
 .ruler-s-p {
    display: flex;
    font-size: 19px;
    align-items: center;
    gap: 10px;
+   cursor: pointer;
 }
 .ruler-s-p p:last-child {
    font-size: 11px;
@@ -405,6 +425,13 @@ body {
    scale: 0.5;
    background-image: url(../img/hero-hi.png);
    background-size: cover;
+}
+.hepl {
+   width: 604px;
+   margin: 20px 0;
+}
+.hepl > p {
+   margin: 20px 0;
 }
 .colb-absolute {
    position: absolute;
@@ -463,13 +490,16 @@ body {
    padding-top: 15px;
    margin-top: 20px;
 }
-/* .rules-white {
-   width: 590px;
-} */
+.rules-white {
+   margin: 0;
+}
 .lets-ready {
    color: #172f99;
    font-size: 18px;
    font-weight: 500;
+}
+.get-luck {
+   margin: 10px 0;
 }
 .game-end-container {
    position: absolute;
@@ -527,7 +557,7 @@ body {
    /* padding: 10px 30px; */
    border-radius: 10px;
    /* box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2); */
-   cursor: pointer;
+   /* cursor: pointer; */
    z-index: 100;
    animation-duration: 1000ms;
    animation-name: appearTransition;
@@ -542,17 +572,28 @@ body {
 .start-modal {
    width: 1280px;
 }
+.first-modal-text-line {
+   width: 550px;
+   text-align: left;
+}
 .rules-update {
    /* width: 600px; */
    height: fit-content;
    margin-top: 10px;
-   margin-top: 40px;
-   padding: 5px 55px;
+   margin-top: 37px;
+   padding: 5px 55px 0;
    border-radius: 30px;
+}
+.help-update {
+   width: 740px;
+   margin-top: 70px;
+}
+.help-white {
+   gap: 20px;
 }
 .start-blure-bg {
    width: 750px;
-   height: fit-content;
+   height: 580px;
    padding: 40px;
    padding: 30px 5px;
    border-radius: 30px;
@@ -586,6 +627,7 @@ body {
    align-items: center;
    justify-content: center;
    font-size: 19px;
+   cursor: pointer;
 }
 .rules-close-btn {
    background: #e83459;
@@ -602,6 +644,7 @@ body {
    align-items: center;
    justify-content: center;
    font-size: 19px;
+   cursor: pointer;
 }
 .game-end-header {
    color: #2c42b6;
@@ -653,7 +696,7 @@ body {
 
 .fill-bg-container {
    width: 100vw;
-   height: 100dvh;
+   height: 100vh;
    background-image: url(../img/rules-bg-new.jpeg);
    background-position: center;
    background-size: cover;
@@ -661,7 +704,7 @@ body {
 }
 .logo-l-cont {
    width: 100%;
-   height: 10dvh;
+   height: 10vh;
    background: #fff;
    background-image: url(../img/logo-pm.png);
    background-repeat: no-repeat;
@@ -675,11 +718,11 @@ body {
 }
 .align-left {
    top: 28px;
-   left: 35px;
+   left: -175px;
 }
 .align-right {
    top: 28px;
-   right: 25px;
+   right: -175px;
 }
 
 .list-holder {
@@ -725,8 +768,8 @@ body {
    transform: translateX(-50%);
    background-image: url(../img/logo-pm.png);
    background-size: cover;
-   width: 151px;
-   height: 40px;
+   width: 190px;
+   height: 50px;
 }
 .start-second-box {
    padding: 10px;
@@ -748,6 +791,44 @@ body {
 }
 .rules-1-b {
    margin: 0 0 10px;
+}
+.ml-15 {
+   margin: 0 0 71px 7px;
+}
+.way-walue-left,
+.way-walue-right {
+   font-size: 22px;
+   font-weight: 700;
+   bottom: -100px;
+   left: 50%;
+   color: #e73458;
+   /* transform: translateX(-50%); */
+   position: absolute;
+   display: flex;
+   width: 300px;
+   /* border: 3px solid red; */
+   justify-content: center;
+   align-items: center;
+}
+.way-walue-left {
+   transform: translateX(-135%);
+}
+.way-walue-right {
+   transform: translateX(35%);
+}
+.way-walue-left.active,
+.way-walue-right.active {
+   opacity: 0;
+}
+.under-line-op {
+   width: 100%;
+   height: 50px;
+   background: #ffffff80;
+   position: absolute;
+   bottom: -112px;
+}
+button {
+   cursor: pointer;
 }
 .none {
    display: none;

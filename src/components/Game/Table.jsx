@@ -21,8 +21,13 @@ function Table({ type, board, classNames }) {
    }
    const [shipList, setShipList] = useState(list.reverse());
 
+   // const [active, setActive] = useState(false);
+
    function setCell([hoverX, hoverY]) {
       const touched = touchedShip(board, [hoverX, hoverY]);
+      // type === 1 && turn && winner === null ? setActive(true) : setActive(false);
+      // console.log(type, turn, winner, "table");
+
       if (touched) {
          const wreckedShip = getWreckedShip(board, [hoverX, hoverY]);
          wreckedShip.health -= 1;
@@ -54,6 +59,7 @@ function Table({ type, board, classNames }) {
       } else {
          setTurn(!turn);
       }
+      // console.log(type);
    }
 
    function updateCell() {
@@ -110,14 +116,15 @@ function Table({ type, board, classNames }) {
 
    const tableNames = ["table-ship"];
    if (type === 1 && turn && winner === null) tableNames.push("disabled");
+   if (type === 0 && !turn && winner === null) tableNames.push("disabled");
    classList.push(type === 1 ? "opponent-board" : "your-board");
+
    return (
       <div className={classList.join(" ")}>
          <h2 className="table-head-text">{(type ? "Инфицированная" : "Чистая") + " зона"}</h2>
          <table className={tableNames.join(" ")}>
             <tbody>{rows}</tbody>
          </table>
-
          <ShipList {...{ type, shipList }} />
       </div>
    );

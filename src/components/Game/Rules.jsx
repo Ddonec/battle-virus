@@ -27,10 +27,10 @@ function Rules({ clickCB }) {
                      <div className="number-list">5</div>Ваше попадание в цель оставляет следующий ход за Вами. Ваш промах дает возможность ответить Вашему противнику.
                   </p>
                   <p>
-                     <div className="number-list">6</div>Победителем считается тот, кто первым найдет и обезвредит весь потенциал противника! Удачи!
+                     <div className="number-list">6</div>Победителем считается тот, кто первым найдет и обезвредит весь потенциал противника!
                   </p>
                </div>
-               {/* <p className="lets-ready">Удачи!</p> */}
+               <p className="lets-ready get-luck ">Удачи!</p>
 
                <div className="btnS-area rules-btn">
                   <div onClick={clickCB} className="close-btn rules-close-btn">

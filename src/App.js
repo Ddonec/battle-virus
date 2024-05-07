@@ -9,8 +9,11 @@ import GameBoard from "./components/GameBoard";
 import { CSSTransition } from "react-transition-group";
 import WelcomeHi from "./components/Game/WelcomeHello";
 import Rules from "./components/Game/Rules";
+import Help from "./components/Game/Help";
 import StartModal from "./components/Game/StartModal";
 import RulesLink from "./components/Setup/RulesLink";
+import HelpLink from "./components/Setup/ HelpLink";
+import FIllBG from "./components/FIllBG";
 
 function App() {
    const size = useWindowSize();
@@ -18,6 +21,7 @@ function App() {
    const [showStartModal, setShowStartModal] = useState(true);
    const [showStart, setShowStart] = useState(true);
    const [showRules, setShowRules] = useState(false);
+   const [showHelp, setShowHelp] = useState(false);
    const [difficulty, setDifficulty] = useState(0);
    const [board1, setBoard1] = useState([]);
    const [board2, setBoard2] = useState(generateBoard());
@@ -30,12 +34,19 @@ function App() {
       setShowContainer(false);
       setShowBG(true);
    };
+   const helpBtn = () => {
+      setShowHelp(true);
+      setShowStart(false);
+      setShowContainer(false);
+      setShowBG(true);
+   };
 
    const closeBtb = () => {
       setShowStart(false);
       setShowRules(false);
       setShowContainer(true);
       setShowBG(false);
+      setShowHelp(false);
    };
 
    const closeBtnModal = () => {
@@ -51,22 +62,26 @@ function App() {
                <div className="page-wrapper">
                   <div className="logo-container">{/* <h1 className="logo-text ">ПРОМОМЕD</h1> */}</div>
                   {board1.length === 10 ? (
-                     <GameBoard {...{ board1, board2, setBoard1, setBoard2, difficulty }}></GameBoard>
+                     <GameBoard {...{ board1, board2, setBoard1, setBoard2, difficulty, rulesBtn, helpBtn }}></GameBoard>
                   ) : (
                      <SetupBoard {...{ scale, setBoard1, difficulty, setDifficulty }}></SetupBoard>
                   )}
                </div>
             )}
-            {showContainer && (board1.length === 10 ? "" : <RulesLink ClickRL={rulesBtn}></RulesLink>)}
+            {showContainer &&
+               (board1.length === 10 ? (
+                  ""
+               ) : (
+                  <RulesLink ClickRL={rulesBtn}>
+                     <HelpLink ClickRL={helpBtn}></HelpLink>
+                  </RulesLink>
+               ))}
             {showRules && <Rules clickCB={closeBtb} />}
+            {showHelp && <Help clickHB={closeBtb} />}
             {showStart && <WelcomeHi clickCB={closeBtb} clickR={rulesBtn} />}
             {showStartModal && <StartModal clickHide={closeBtnModal} />}
          </div>
-         {showBG && (
-            <div className="fill-bg-container">
-               <div className="logo-l-cont"></div>
-            </div>
-         )}
+         {showBG && <FIllBG />}
       </>
    );
 }
