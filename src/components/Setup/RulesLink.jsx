@@ -24,7 +24,7 @@ function RulesLink({ ClickRL }) {
                <p className="info-rect">i</p>
             </div>
             <div className="help-info-box">
-               <div className="help-info__title">Подсказка:</div>
+               <div className="help-info__title">Подсказки:</div>
                <div className="help-info__subtitle">{texts[textIndex]}</div>
             </div>
          </div>

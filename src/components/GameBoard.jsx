@@ -37,9 +37,11 @@ function GameBoard({ board1, board2, setBoard1, setBoard2, difficulty }) {
                }}
             >
                <Table classNames="no-events" type={0} board={board1} />
-               <div className={"way-walue-left " + (!turn ? "active" : "")}>ход соперника</div>
+               <div className="under-line-op"></div>
+
+               <div className={"way-walue-left " + (!turn ? "active" : "")}>Ход противника</div>
                <Table type={1} board={board2} {...{ turn, setTurn }} />
-               <div className={"way-walue-right " + (turn ? "active" : "")}>ваш ход</div>
+               <div className={"way-walue-right " + (turn ? "active" : "")}>Ваш ход</div>
                <GameEnd {...{ setBoard1, setBoard2 }} />
             </GameContext.Provider>
          </div>
