@@ -11,6 +11,7 @@ import WelcomeHi from "./components/Game/WelcomeHello";
 import Rules from "./components/Game/Rules";
 import StartModal from "./components/Game/StartModal";
 import RulesLink from "./components/Setup/RulesLink";
+import FIllBG from "./components/FIllBG";
 
 function App() {
    const size = useWindowSize();
@@ -51,7 +52,7 @@ function App() {
                <div className="page-wrapper">
                   <div className="logo-container">{/* <h1 className="logo-text ">ПРОМОМЕD</h1> */}</div>
                   {board1.length === 10 ? (
-                     <GameBoard {...{ board1, board2, setBoard1, setBoard2, difficulty }}></GameBoard>
+                     <GameBoard {...{ board1, board2, setBoard1, setBoard2, difficulty, rulesBtn }}></GameBoard>
                   ) : (
                      <SetupBoard {...{ scale, setBoard1, difficulty, setDifficulty }}></SetupBoard>
                   )}
@@ -62,11 +63,7 @@ function App() {
             {showStart && <WelcomeHi clickCB={closeBtb} clickR={rulesBtn} />}
             {showStartModal && <StartModal clickHide={closeBtnModal} />}
          </div>
-         {showBG && (
-            <div className="fill-bg-container">
-               <div className="logo-l-cont"></div>
-            </div>
-         )}
+         {showBG && <FIllBG />}
       </>
    );
 }

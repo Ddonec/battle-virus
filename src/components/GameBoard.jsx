@@ -5,9 +5,9 @@ import GameEnd from "./Game/GameEnd";
 import Table from "./Game/Table";
 import { CSSTransition } from "react-transition-group";
 import RulesLink from "./Setup/RulesLinkModal";
-import Rules from "./Game/Rules";
+import HelpLink from "./Setup/ HelpLink";
 
-function GameBoard({ board1, board2, setBoard1, setBoard2, difficulty }) {
+function GameBoard({ board1, board2, setBoard1, setBoard2, difficulty, rulesBtn }) {
    const [turn, setTurn] = useState(false);
    const [moves, setMoves] = useState(getMoves(board1, difficulty));
    const [winner, setWinner] = useState(null);
@@ -26,38 +26,43 @@ function GameBoard({ board1, board2, setBoard1, setBoard2, difficulty }) {
    }
    console.log({ turn });
 
-   const openRules = () => {
-      setShowRules(true);
-   };
-   const closeRules = () => {
-      setShowRules(false);
-   };
+   // const openRules = () => {
+   //    setShowRules(true);
+   //    setShowBG(true);
+   // };
+   // const closeRules = () => {
+   //    setShowRules(false);
+   //    setShowBG(false);
+   // };
 
    return (
-      <CSSTransition in={true} appear={true} timeout={1000} classNames="page-holder">
-         <div className="page-holder">
-            <GameContext.Provider
-               value={{
-                  turn,
-                  setTurn,
-                  getMove,
-                  removeMove,
-                  winner,
-                  setWinner,
-               }}
-            >
-               <Table classNames="no-events" type={0} board={board1} />
-               <div className="under-line-op">
-                  <RulesLink ClickRLM={openRules}></RulesLink>
-               </div>
-               {showRules && <Rules clickCB={closeRules}></Rules>}
-               <div className={"way-walue-left " + (!turn ? "active" : "")}>Ход противника</div>
-               <Table type={1} board={board2} {...{ turn, setTurn }} />
-               <div className={"way-walue-right " + (turn ? "active" : "")}>Ваш ход</div>
-               <GameEnd {...{ setBoard1, setBoard2 }} />
-            </GameContext.Provider>
-         </div>
-      </CSSTransition>
+      <>
+         <CSSTransition in={true} appear={true} timeout={1000} classNames="page-holder">
+            <div className="page-holder">
+               <GameContext.Provider
+                  value={{
+                     turn,
+                     setTurn,
+                     getMove,
+                     removeMove,
+                     winner,
+                     setWinner,
+                  }}
+               >
+                  <Table classNames="no-events" type={0} board={board1} />
+                  <div className="under-line-op">
+                     <RulesLink ClickRLM={rulesBtn}></RulesLink>
+                     <HelpLink></HelpLink>
+                  </div>
+                  {/* {showRules && <Rules clickCB={openRules}></Rules>} */}
+                  <div className={"way-walue-left " + (!turn ? "active" : "")}>Ход противника</div>
+                  <Table type={1} board={board2} {...{ turn, setTurn }} />
+                  <div className={"way-walue-right " + (turn ? "active" : "")}>Ваш ход</div>
+                  <GameEnd {...{ setBoard1, setBoard2 }} />
+               </GameContext.Provider>
+            </div>
+         </CSSTransition>
+      </>
    );
 }
 
