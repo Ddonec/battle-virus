@@ -4,11 +4,14 @@ import { getMoves, random } from "../utils/Common";
 import GameEnd from "./Game/GameEnd";
 import Table from "./Game/Table";
 import { CSSTransition } from "react-transition-group";
+import RulesLink from "./Setup/RulesLinkModal";
+import Rules from "./Game/Rules";
 
 function GameBoard({ board1, board2, setBoard1, setBoard2, difficulty }) {
    const [turn, setTurn] = useState(false);
    const [moves, setMoves] = useState(getMoves(board1, difficulty));
    const [winner, setWinner] = useState(null);
+   const [showRules, setShowRules] = useState(false);
    function getMove() {
       if (!moves.length) return null;
 
@@ -22,6 +25,13 @@ function GameBoard({ board1, board2, setBoard1, setBoard2, difficulty }) {
       if (index >= 0) moves.splice(index, 1);
    }
    console.log({ turn });
+
+   const openRules = () => {
+      setShowRules(true);
+   };
+   const closeRules = () => {
+      setShowRules(false);
+   };
 
    return (
       <CSSTransition in={true} appear={true} timeout={1000} classNames="page-holder">
@@ -37,8 +47,10 @@ function GameBoard({ board1, board2, setBoard1, setBoard2, difficulty }) {
                }}
             >
                <Table classNames="no-events" type={0} board={board1} />
-               <div className="under-line-op"></div>
-
+               <div className="under-line-op">
+                  <RulesLink ClickRLM={openRules}></RulesLink>
+               </div>
+               {showRules && <Rules clickCB={closeRules}></Rules>}
                <div className={"way-walue-left " + (!turn ? "active" : "")}>Ход противника</div>
                <Table type={1} board={board2} {...{ turn, setTurn }} />
                <div className={"way-walue-right " + (turn ? "active" : "")}>Ваш ход</div>
