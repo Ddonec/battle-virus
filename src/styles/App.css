@@ -58,6 +58,9 @@ body {
    background-size: cover;
    background-position: bottom;
 }
+.page-wrapper.hidden {
+   opacity: 0;
+}
 
 .page-holder {
    display: flex;
@@ -344,7 +347,7 @@ body {
    line-height: 1.6;
 }
 .rules {
-   width: 510px;
+   width: 623px;
    text-align: start;
    margin: 0;
    line-height: 1.6;
@@ -840,6 +843,9 @@ body {
 }
 .line-main {
    bottom: 22px;
+}
+.line-main.hidden {
+   opacity: 0;
 }
 button {
    cursor: pointer;
