@@ -35,10 +35,16 @@ function App() {
       setShowContainer(false);
       setShowBG(true);
    };
+   const rulesBtnL = () => {
+      setShowRules(true);
+      setShowStart(false);
+      // setShowContainer(false);
+      setShowBG(true);
+   };
    const helpBtn = () => {
       setShowHelp(true);
       setShowStart(false);
-      setShowContainer(false);
+      // setShowContainer(false);
       setShowBG(true);
    };
 
@@ -60,10 +66,10 @@ function App() {
       <>
          <div className="page-container no-select" style={{ transform: "translate(-50%, -50%) scale(" + scale + ")" }}>
             {showContainer && (
-               <div className="page-wrapper">
+               <div className={`page-wrapper ${showRules || showHelp ? "hidden" : ""}`}>
                   <div className="logo-container">{/* <h1 className="logo-text ">ПРОМОМЕD</h1> */}</div>
                   {board1.length === 10 ? (
-                     <GameBoard {...{ board1, board2, setBoard1, setBoard2, difficulty, rulesBtn, helpBtn }}></GameBoard>
+                     <GameBoard {...{ board1, board2, setBoard1, setBoard2, difficulty, rulesBtnL, helpBtn }}></GameBoard>
                   ) : (
                      <SetupBoard {...{ scale, setBoard1, difficulty, setDifficulty }}></SetupBoard>
                   )}
@@ -72,10 +78,10 @@ function App() {
             {showContainer &&
                (board1.length === 10 ? (
                   // <RulesLinkModal ClickRLM={rulesBtn} ClickHLM={helpBtn}></RulesLinkModal>
-                  ''
+                  ""
                ) : (
-                  <div className="under-line-op line-main">
-                     <RulesLink ClickRL={rulesBtn} clickHL={helpBtn}></RulesLink>
+                  <div className={`under-line-op line-main ${showRules || showHelp ? "hidden" : ""}`}>
+                     <RulesLink ClickRL={rulesBtnL} clickHL={helpBtn}></RulesLink>
                   </div>
                ))}
             {showRules && <Rules clickCB={closeBtb} />}

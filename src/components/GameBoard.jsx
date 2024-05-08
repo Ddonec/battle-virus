@@ -6,7 +6,7 @@ import Table from "./Game/Table";
 import { CSSTransition } from "react-transition-group";
 import RulesLinkModal from "./Setup/RulesLinkModal";
 
-function GameBoard({ board1, board2, setBoard1, setBoard2, difficulty, rulesBtn, helpBtn }) {
+function GameBoard({ board1, board2, setBoard1, setBoard2, difficulty, rulesBtnL, helpBtn }) {
    const [turn, setTurn] = useState(false);
    const [moves, setMoves] = useState(getMoves(board1, difficulty));
    const [winner, setWinner] = useState(null);
@@ -50,7 +50,7 @@ function GameBoard({ board1, board2, setBoard1, setBoard2, difficulty, rulesBtn,
                >
                   <Table classNames="no-events" type={0} board={board1} />
                   <div className="under-line-op under-40">
-                     <RulesLinkModal ClickRLM={rulesBtn} ClickHLM={helpBtn}></RulesLinkModal>
+                     <RulesLinkModal ClickRLM={rulesBtnL} ClickHLM={helpBtn}></RulesLinkModal>
                   </div>
                   {/* {showRules && <Rules clickCB={openRules}></Rules>} */}
                   <div className={"way-walue-left " + (!turn ? "active" : "")}>Ход противника</div>
